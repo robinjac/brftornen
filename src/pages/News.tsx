@@ -1,28 +1,5 @@
 import { Bell } from 'lucide-react';
-
-const newsItems = [
-  {
-    id: 1,
-    date: '2024-03-15',
-    title: 'Annual General Meeting Announcement',
-    content: 'The annual general meeting will be held on April 15th at 18:00 in the community room. Important decisions regarding renovation plans will be discussed.',
-    category: 'Meeting'
-  },
-  {
-    id: 2,
-    date: '2024-03-10',
-    title: 'Spring Cleaning Day',
-    content: 'Join us for our annual spring cleaning day on March 30th. We\'ll be tidying up common areas and the courtyard.',
-    category: 'Event'
-  },
-  {
-    id: 3,
-    date: '2024-03-05',
-    title: 'New Recycling Guidelines',
-    content: 'Updated recycling guidelines are now in effect. Please check the recycling room for new sorting instructions.',
-    category: 'Information'
-  }
-];
+import newsItems from "../../test/news.json"
 
 const News = () => {
   return (
