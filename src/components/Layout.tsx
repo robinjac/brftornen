@@ -34,7 +34,7 @@ const Layout = () => {
           <div className="flex justify-between items-center h-16">
             <Link to="/" className="flex items-center space-x-2">
               <Home className="h-6 w-6 text-blue-600" />
-              <span className="font-semibold text-xl">Housing Association</span>
+              <span className="font-semibold text-xl">BRF Tornen</span>
             </Link>
             
             {/* Mobile menu button */}
