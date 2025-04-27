@@ -1,3 +1,5 @@
 {
-    "emergencyPhone": "+46 123 456 789"
+    "phone": "+46 123 456 789",
+    "email": "info@housingassociation.com",
+    "address": "Example Street 123, City"
 }
