@@ -125,7 +125,7 @@ const Home = () => {
       {/* Hero Section */}
 
       <div className="-mx-4 sm:-mx-6 lg:-mx-8 -mt-8 bg-[url(/brftornen.jpg)] bg-cover bg-center w-screen min-h-[50vh] sm:min-h-[80vh] flex justify-center text-white">
-        <div className="relative z-10 pt-10 sm:pt-20 max-w-4xl mx-auto text-center px-4">
+        <div className="relative pt-10 sm:pt-20 max-w-4xl mx-auto text-center px-4">
           <h1 className="text-2xl sm:text-4xl font-extrabold mb-6">
             BRF Tornen Järfälla
           </h1>
