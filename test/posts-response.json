@@ -1,0 +1,188 @@
+[
+  {
+    "id": 736,
+    "date": "2025-03-18T18:55:53",
+    "date_gmt": "2025-03-18T17:55:53",
+    "guid": { "rendered": "https://www.brftornen.se/?p=736" },
+    "modified": "2025-03-18T18:55:53",
+    "modified_gmt": "2025-03-18T17:55:53",
+    "slug": "cykelrensning",
+    "status": "publish",
+    "type": "post",
+    "link": "https://www.brftornen.se/2025/03/18/cykelrensning/",
+    "title": { "rendered": "Cykelrensning" },
+    "content": {
+      "rendered": "\n<div data-wp-interactive=\"core/file\" class=\"wp-block-file\"><object data-wp-bind--hidden=\"!state.hasPdfPreview\" hidden class=\"wp-block-file__embed\" data=\"https://www.brftornen.se/wp-content/uploads/2025/03/CYkELRENSNING.pdf\" type=\"application/pdf\" style=\"width:100%;height:1020px\" aria-label=\"Inb\u00e4ddning av CYkELRENSNING.\"></object><a id=\"wp-block-file--media-ab1d23b9-4725-4c30-af03-633e82dbce4f\" href=\"https://www.brftornen.se/wp-content/uploads/2025/03/CYkELRENSNING.pdf\">CYkELRENSNING</a><a href=\"https://www.brftornen.se/wp-content/uploads/2025/03/CYkELRENSNING.pdf\" class=\"wp-block-file__button wp-element-button\" download aria-describedby=\"wp-block-file--media-ab1d23b9-4725-4c30-af03-633e82dbce4f\">Ladda ner</a></div>\n",
+      "protected": false
+    },
+    "excerpt": { "rendered": "", "protected": false },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": { "_oct_exclude_from_cache": false, "footnotes": "" },
+    "categories": [1],
+    "tags": [],
+    "class_list": [
+      "post-736",
+      "post",
+      "type-post",
+      "status-publish",
+      "format-standard",
+      "hentry",
+      "category-okategoriserade"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.brftornen.se/wp-json/wp/v2/posts/736",
+          "targetHints": { "allow": ["GET"] }
+        }
+      ],
+      "collection": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/posts" }
+      ],
+      "about": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/types/post" }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/comments?post=736"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/posts/736/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 739,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/posts/736/revisions/739"
+        }
+      ],
+      "wp:attachment": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/media?parent=736" }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/categories?post=736"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/tags?post=736"
+        }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    }
+  },
+  {
+    "id": 731,
+    "date": "2025-03-09T20:39:38",
+    "date_gmt": "2025-03-09T19:39:38",
+    "guid": { "rendered": "https://www.brftornen.se/?p=731" },
+    "modified": "2025-03-09T20:39:38",
+    "modified_gmt": "2025-03-09T19:39:38",
+    "slug": "kallelse-extrastamma-2025",
+    "status": "publish",
+    "type": "post",
+    "link": "https://www.brftornen.se/2025/03/09/kallelse-extrastamma-2025/",
+    "title": { "rendered": "Kallelse extrast\u00e4mma 2025" },
+    "content": {
+      "rendered": "\n<div data-wp-interactive=\"core/file\" class=\"wp-block-file\"><object data-wp-bind--hidden=\"!state.hasPdfPreview\" hidden class=\"wp-block-file__embed\" data=\"https://www.brftornen.se/wp-content/uploads/2025/03/Kallelse-extrastamma-2025-1.pdf\" type=\"application/pdf\" style=\"width:100%;height:600px\" aria-label=\"Inb\u00e4ddning av Kallelse extrast\u00e4mma 2025.\"></object><a id=\"wp-block-file--media-1ea97680-5a12-4935-bcf9-0c7aa07dd2aa\" href=\"https://www.brftornen.se/wp-content/uploads/2025/03/Kallelse-extrastamma-2025-1.pdf\">Kallelse extrast\u00e4mma 2025</a><a href=\"https://www.brftornen.se/wp-content/uploads/2025/03/Kallelse-extrastamma-2025-1.pdf\" class=\"wp-block-file__button wp-element-button\" download aria-describedby=\"wp-block-file--media-1ea97680-5a12-4935-bcf9-0c7aa07dd2aa\">Ladda ner</a></div>\n",
+      "protected": false
+    },
+    "excerpt": { "rendered": "", "protected": false },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": { "_oct_exclude_from_cache": false, "footnotes": "" },
+    "categories": [1],
+    "tags": [],
+    "class_list": [
+      "post-731",
+      "post",
+      "type-post",
+      "status-publish",
+      "format-standard",
+      "hentry",
+      "category-okategoriserade"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.brftornen.se/wp-json/wp/v2/posts/731",
+          "targetHints": { "allow": ["GET"] }
+        }
+      ],
+      "collection": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/posts" }
+      ],
+      "about": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/types/post" }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/comments?post=731"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/posts/731/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 733,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/posts/731/revisions/733"
+        }
+      ],
+      "wp:attachment": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/media?parent=731" }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/categories?post=731"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/tags?post=731"
+        }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    }
+  }
+]

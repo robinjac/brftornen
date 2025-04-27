@@ -1,0 +1,739 @@
+[
+  {
+    "id": 548,
+    "date": "2024-02-18T15:41:45",
+    "date_gmt": "2024-02-18T14:41:45",
+    "guid": { "rendered": "https://www.brftornen.se/?page_id=548" },
+    "modified": "2024-03-05T19:24:46",
+    "modified_gmt": "2024-03-05T18:24:46",
+    "slug": "inglasning-av-balkong",
+    "status": "publish",
+    "type": "page",
+    "link": "https://www.brftornen.se/inglasning-av-balkong/",
+    "title": { "rendered": "INGLASNING AV BALKONG" },
+    "content": {
+      "rendered": "\n<ul class=\"wp-block-list\">\n<li><strong>Bygglov: </strong>Du m\u00e5ste sj\u00e4lv ans\u00f6ka hos kommunen om bygglov.</li>\n\n\n\n<li><strong>Bygganm\u00e4lan: </strong>Du m\u00e5ste sj\u00e4lv g\u00f6ra en bygganm\u00e4lan till kommunen. Kontakta kommunens Kundtj\u00e4nst 08-580 285 00. N\u00e4r du har best\u00e4mt vilket f\u00f6retag som ska g\u00f6ra din inglasning, ska den kvalitetsansvarige fr\u00e5n inglasningsfirman underteckna bygganm\u00e4lan. Sedan skickas anm\u00e4lan till kommunen tillsammans med en fasadritning med en markering av vilken balkong det g\u00e4ller.</li>\n\n\n\n<li><strong>Avtal med f\u00f6reningen:</strong> Du m\u00e5ste teckna ett avtal med f\u00f6reningen n\u00e4r du glasar in balkongen. Detta avtal reglerar ansvaret f\u00f6r l\u00e4genhetsinnehavaren. H\u00f6r av dig till styrelsens kontaktpersoner ang\u00e5ende detta.</li>\n\n\n\n<li><strong>Typ av inglasning:</strong> Styrelsen har \u00e4ven fattat beslut att vi ska ha ett gemensamt utseende p\u00e5 inglasningen av balkongerna. Detta f\u00f6r att bibeh\u00e5lla ett enhetligt utseende p\u00e5 fasaden. Beslutet \u00e4r att det ska anv\u00e4ndas en profilfri (ramfri) inglasning, d.v.s. glas utan enskilda inramningar</li>\n</ul>\n",
+      "protected": false
+    },
+    "excerpt": { "rendered": "", "protected": false },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": { "_oct_exclude_from_cache": false, "footnotes": "" },
+    "class_list": ["post-548", "page", "type-page", "status-publish", "hentry"],
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.brftornen.se/wp-json/wp/v2/pages/548",
+          "targetHints": { "allow": ["GET"] }
+        }
+      ],
+      "collection": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/pages" }
+      ],
+      "about": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/types/page" }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/comments?post=548"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 2,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/pages/548/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 628,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/pages/548/revisions/628"
+        }
+      ],
+      "wp:attachment": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/media?parent=548" }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    }
+  },
+  {
+    "id": 541,
+    "date": "2024-02-18T15:28:02",
+    "date_gmt": "2024-02-18T14:28:02",
+    "guid": { "rendered": "https://www.brftornen.se/?page_id=541" },
+    "modified": "2024-02-20T20:39:48",
+    "modified_gmt": "2024-02-20T19:39:48",
+    "slug": "ytterdorr",
+    "status": "publish",
+    "type": "page",
+    "link": "https://www.brftornen.se/ytterdorr/",
+    "title": { "rendered": "YTTERD\u00d6RR" },
+    "content": {
+      "rendered": "\n<p class=\"has-medium-font-size\">Ny ytterd\u00f6rr</p>\n\n\n\n<p>Om du skall byta din ytterd\u00f6rr till antingen s\u00e4kerhetsd\u00f6rr eller en ny vanlig, s\u00e5 har styrelsen best\u00e4mt att f\u00e4rgen ek skall g\u00e4lla, detta f\u00f6r att det skall bli enhetligt.</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Ny ytterd\u00f6rr Om du skall byta din ytterd\u00f6rr till antingen s\u00e4kerhetsd\u00f6rr eller en ny vanlig, s\u00e5 har styrelsen best\u00e4mt att f\u00e4rgen ek skall g\u00e4lla, detta f\u00f6r att det skall bli &#8230;</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": { "_oct_exclude_from_cache": false, "footnotes": "" },
+    "class_list": ["post-541", "page", "type-page", "status-publish", "hentry"],
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.brftornen.se/wp-json/wp/v2/pages/541",
+          "targetHints": { "allow": ["GET"] }
+        }
+      ],
+      "collection": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/pages" }
+      ],
+      "about": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/types/page" }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/comments?post=541"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 2,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/pages/541/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 613,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/pages/541/revisions/613"
+        }
+      ],
+      "wp:attachment": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/media?parent=541" }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    }
+  },
+  {
+    "id": 486,
+    "date": "2024-02-09T10:23:59",
+    "date_gmt": "2024-02-09T09:23:59",
+    "guid": { "rendered": "https://www.brftornen.se/?page_id=486" },
+    "modified": "2024-03-05T20:04:02",
+    "modified_gmt": "2024-03-05T19:04:02",
+    "slug": "hem",
+    "status": "publish",
+    "type": "page",
+    "link": "https://www.brftornen.se/hem/",
+    "title": { "rendered": "HEM" },
+    "content": {
+      "rendered": "\n<figure class=\"wp-block-image size-full is-resized is-style-rounded\"><img decoding=\"async\" src=\"https://www.brftornen.se/wp-content/uploads/2024/02/Tornen-vinterskrud-4-1024x768-1-edited.jpg\" alt=\"\" class=\"wp-image-496\" style=\"width:1011px;height:auto\"/></figure>\n\n\n\n<p class=\"has-medium-font-size\"><strong>V\u00e4lkommen till Brf Tornen!</strong></p>\n\n\n\n<p>Brf Tornen \u00e4r en bostadsr\u00e4ttsf\u00f6rening bel\u00e4gen i Jakobsberg, J\u00e4rf\u00e4lla.</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>V\u00e4lkommen till Brf Tornen! Brf Tornen \u00e4r en bostadsr\u00e4ttsf\u00f6rening bel\u00e4gen i Jakobsberg, J\u00e4rf\u00e4lla.</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "template-fullwidth-stretched.php",
+    "meta": { "_oct_exclude_from_cache": false, "footnotes": "" },
+    "class_list": ["post-486", "page", "type-page", "status-publish", "hentry"],
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.brftornen.se/wp-json/wp/v2/pages/486",
+          "targetHints": { "allow": ["GET"] }
+        }
+      ],
+      "collection": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/pages" }
+      ],
+      "about": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/types/page" }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/comments?post=486"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 5,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/pages/486/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 638,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/pages/486/revisions/638"
+        }
+      ],
+      "wp:attachment": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/media?parent=486" }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    }
+  },
+  {
+    "id": 465,
+    "date": "2024-02-08T20:00:56",
+    "date_gmt": "2024-02-08T19:00:56",
+    "guid": { "rendered": "https://www.brftornen.se/?page_id=465" },
+    "modified": "2024-02-18T15:22:02",
+    "modified_gmt": "2024-02-18T14:22:02",
+    "slug": "avlopp",
+    "status": "publish",
+    "type": "page",
+    "link": "https://www.brftornen.se/avlopp/",
+    "title": { "rendered": "AVLOPP" },
+    "content": {
+      "rendered": "\n<p>Rensning av avlopp fram till stam bekostas av l\u00e4genhetsinnehavaren.</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Rensning av avlopp fram till stam bekostas av l\u00e4genhetsinnehavaren.</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": { "_oct_exclude_from_cache": false, "footnotes": "" },
+    "class_list": ["post-465", "page", "type-page", "status-publish", "hentry"],
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.brftornen.se/wp-json/wp/v2/pages/465",
+          "targetHints": { "allow": ["GET"] }
+        }
+      ],
+      "collection": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/pages" }
+      ],
+      "about": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/types/page" }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/comments?post=465"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 2,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/pages/465/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 537,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/pages/465/revisions/537"
+        }
+      ],
+      "wp:attachment": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/media?parent=465" }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    }
+  },
+  {
+    "id": 463,
+    "date": "2024-02-08T20:00:33",
+    "date_gmt": "2024-02-08T19:00:33",
+    "guid": { "rendered": "https://www.brftornen.se/?page_id=463" },
+    "modified": "2024-02-20T20:37:28",
+    "modified_gmt": "2024-02-20T19:37:28",
+    "slug": "spiskapa",
+    "status": "publish",
+    "type": "page",
+    "link": "https://www.brftornen.se/spiskapa/",
+    "title": { "rendered": "SPISK\u00c5PA/FL\u00c4KT" },
+    "content": {
+      "rendered": "\n<p><strong>Om du skall renovera ditt k\u00f6k och byta fl\u00e4kt eller spisk\u00e5pa skall du t\u00e4nka p\u00e5 att det finns tv\u00e5 typer av fl\u00e4ktar som du f\u00e5r anv\u00e4nda! I flerbostadshus med en gemensam ventilationskanal \u00e4r det inte till\u00e5tet att installera spisfl\u00e4kt (fl\u00e4kt med egen motorfl\u00e4kt).</strong></p>\n\n\n\n<p class=\"has-medium-font-size\">Till\u00e5tna fl\u00e4ktar</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Spisk\u00e5pa utan fl\u00e4kt, som ansluts till k\u00f6kets ventilationskanal</li>\n\n\n\n<li>Kolfilterfl\u00e4kt som renar luften och bl\u00e5ser ut den i k\u00f6ket igen men som du inte f\u00e5r ansluta till ventilationskanalen. T\u00e4nk p\u00e5 att det skall sitta ett fr\u00e5nluftsdon p\u00e5 ventilationskanalen med ett grundfl\u00f6de p\u00e5 10 liter/sekund</li>\n</ul>\n\n\n\n<p>Om fl\u00e4kten eller k\u00e5pan placeras l\u00e5gt blir ventilationen bra. Men det ger samtidigt s\u00e4mre insyn och g\u00f6r det sv\u00e5rare att komma \u00e5t kastruller och annat p\u00e5 spisen. Ur arbetssynpunkt b\u00f6r inte fl\u00e4kten eller k\u00e5pan placeras l\u00e4gre \u00e4n 140 centimeter \u00f6ver golvet eller, beroende p\u00e5 spisens h\u00f6jd, 50 \u2013 55 centimeter \u00f6ver spish\u00e4llen.</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Om du skall renovera ditt k\u00f6k och byta fl\u00e4kt eller spisk\u00e5pa skall du t\u00e4nka p\u00e5 att det finns tv\u00e5 typer av fl\u00e4ktar som du f\u00e5r anv\u00e4nda! I flerbostadshus med en &#8230;</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": { "_oct_exclude_from_cache": false, "footnotes": "" },
+    "class_list": ["post-463", "page", "type-page", "status-publish", "hentry"],
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.brftornen.se/wp-json/wp/v2/pages/463",
+          "targetHints": { "allow": ["GET"] }
+        }
+      ],
+      "collection": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/pages" }
+      ],
+      "about": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/types/page" }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/comments?post=463"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 4,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/pages/463/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 612,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/pages/463/revisions/612"
+        }
+      ],
+      "wp:attachment": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/media?parent=463" }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    }
+  },
+  {
+    "id": 461,
+    "date": "2024-02-08T20:00:19",
+    "date_gmt": "2024-02-08T19:00:19",
+    "guid": { "rendered": "https://www.brftornen.se/?page_id=461" },
+    "modified": "2024-02-20T20:55:48",
+    "modified_gmt": "2024-02-20T19:55:48",
+    "slug": "forsakring",
+    "status": "publish",
+    "type": "page",
+    "link": "https://www.brftornen.se/forsakring/",
+    "title": { "rendered": "F\u00d6RS\u00c4KRING" },
+    "content": {
+      "rendered": "\n<p class=\"has-medium-font-size\">Bostadsr\u00e4ttstill\u00e4gg</p>\n\n\n\n<p>F\u00f6reningen har tecknat en f\u00f6rs\u00e4kring som t\u00e4cker det s\u00e5 kallade bostadsr\u00e4ttstill\u00e4gget. Det betyder att du inte beh\u00f6ver g\u00f6ra det sj\u00e4lv. Villkoren, sj\u00e4lvrisker och andra regler som g\u00e4ller denna f\u00f6rs\u00e4kring hittar du enklast p\u00e5 Folksams hemsida: Folksam.se.</p>\n\n\n\n<p>Du som inte har tillg\u00e5ng till Internet kan ta kontakt med styrelsen.</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Bostadsr\u00e4ttstill\u00e4gg F\u00f6reningen har tecknat en f\u00f6rs\u00e4kring som t\u00e4cker det s\u00e5 kallade bostadsr\u00e4ttstill\u00e4gget. Det betyder att du inte beh\u00f6ver g\u00f6ra det sj\u00e4lv. Villkoren, sj\u00e4lvrisker och andra regler som g\u00e4ller denna f\u00f6rs\u00e4kring &#8230;</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": { "_oct_exclude_from_cache": false, "footnotes": "" },
+    "class_list": ["post-461", "page", "type-page", "status-publish", "hentry"],
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.brftornen.se/wp-json/wp/v2/pages/461",
+          "targetHints": { "allow": ["GET"] }
+        }
+      ],
+      "collection": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/pages" }
+      ],
+      "about": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/types/page" }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/comments?post=461"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 4,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/pages/461/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 618,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/pages/461/revisions/618"
+        }
+      ],
+      "wp:attachment": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/media?parent=461" }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    }
+  },
+  {
+    "id": 459,
+    "date": "2024-02-08T20:00:10",
+    "date_gmt": "2024-02-08T19:00:10",
+    "guid": { "rendered": "https://www.brftornen.se/?page_id=459" },
+    "modified": "2024-02-18T16:16:55",
+    "modified_gmt": "2024-02-18T15:16:55",
+    "slug": "lasbrickor-tags",
+    "status": "publish",
+    "type": "page",
+    "link": "https://www.brftornen.se/lasbrickor-tags/",
+    "title": { "rendered": "NYCKELBRICKOR/TAGS" },
+    "content": {
+      "rendered": "\n<p><strong>Nyckelbrickor eller allm\u00e4nt kallat &#8220;tags&#8221;, &#8220;l\u00e5stag&#8221; eller \u201dblipp\u201d</strong>.</p>\n\n\n\n<p>Om ni beh\u00f6ver ny nyckelbricka till v\u00e5ra fastigheter kan ni k\u00f6pa den hos f\u00f6reningens kontaktperson. Den kostar 100 kr per st.</p>\n\n\n\n<p>G\u00e4ller det LANSENGARAGET eller V\u00c4PNAREN skall ni v\u00e4nda er till Citycon. V\u00e4rt att veta \u00e4r att Citycon kr\u00e4ver uppvisande av avtal alternativt faktura.</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Nyckelbrickor eller allm\u00e4nt kallat &#8220;tags&#8221;, &#8220;l\u00e5stag&#8221; eller \u201dblipp\u201d. Om ni beh\u00f6ver ny nyckelbricka till v\u00e5ra fastigheter kan ni k\u00f6pa den hos f\u00f6reningens kontaktperson. Den kostar 100 kr per st. G\u00e4ller &#8230;</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": { "_oct_exclude_from_cache": false, "footnotes": "" },
+    "class_list": ["post-459", "page", "type-page", "status-publish", "hentry"],
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.brftornen.se/wp-json/wp/v2/pages/459",
+          "targetHints": { "allow": ["GET"] }
+        }
+      ],
+      "collection": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/pages" }
+      ],
+      "about": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/types/page" }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/comments?post=459"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 4,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/pages/459/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 610,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/pages/459/revisions/610"
+        }
+      ],
+      "wp:attachment": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/media?parent=459" }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    }
+  },
+  {
+    "id": 457,
+    "date": "2024-02-08T19:59:52",
+    "date_gmt": "2024-02-08T18:59:52",
+    "guid": { "rendered": "https://www.brftornen.se/?page_id=457" },
+    "modified": "2024-02-20T20:53:22",
+    "modified_gmt": "2024-02-20T19:53:22",
+    "slug": "autogiro-och-e-faktura",
+    "status": "publish",
+    "type": "page",
+    "link": "https://www.brftornen.se/autogiro-och-e-faktura/",
+    "title": { "rendered": "E-FAKTURA OCH AUTOGIRO" },
+    "content": {
+      "rendered": "\n<p class=\"has-medium-font-size\">E-faktura</p>\n\n\n\n<p>HSB har m\u00f6jlighet att skicka e-faktura vilket du best\u00e4ller via din internetbank genom att ange avtalsnumret f\u00f6r ditt avtal som du hittar p\u00e5 din avi eller under Mina Sidor \u2013 Min Bostadekonomi i HSB Portalen. T\u00e4nk p\u00e5 att du m\u00e5ste vara avimottagare f\u00f6r att registrera e-faktura i eget namn. Du kan \u00e4ven registrera e-faktura f\u00f6r annan mottagare, men m\u00e5ste d\u00e5 ange den personens personnummer f\u00f6r att det ska fungera. Olika banker har lite olika alternativ och tillv\u00e4gag\u00e5ngs\u00e4tt vid best\u00e4llning av e-faktura och det b\u00e4sta \u00e4r att f\u00f6lja instruktionerna p\u00e5 respektive internetbank. Denna tj\u00e4nst \u00e4r helt avgiftsfri.</p>\n\n\n\n<p class=\"has-medium-font-size\">Autogiro</p>\n\n\n\n<p>Om du vill betala avgiften via autogiro skall du ringa till HSB 010\u2013442 50 00.</p>\n\n\n\n<figure class=\"wp-block-image size-large is-resized\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"682\" src=\"https://www.brftornen.se/wp-content/uploads/2024/02/calculator-1024x682.jpg\" alt=\"\" class=\"wp-image-615\" style=\"width:838px;height:auto\" srcset=\"https://www.brftornen.se/wp-content/uploads/2024/02/calculator-1024x682.jpg 1024w, https://www.brftornen.se/wp-content/uploads/2024/02/calculator-300x200.jpg 300w, https://www.brftornen.se/wp-content/uploads/2024/02/calculator-768x512.jpg 768w, https://www.brftornen.se/wp-content/uploads/2024/02/calculator.jpg 1280w\" sizes=\"auto, (max-width: 1024px) 100vw, 1024px\" /></figure>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>E-faktura HSB har m\u00f6jlighet att skicka e-faktura vilket du best\u00e4ller via din internetbank genom att ange avtalsnumret f\u00f6r ditt avtal som du hittar p\u00e5 din avi eller under Mina Sidor &#8230;</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": { "_oct_exclude_from_cache": false, "footnotes": "" },
+    "class_list": ["post-457", "page", "type-page", "status-publish", "hentry"],
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.brftornen.se/wp-json/wp/v2/pages/457",
+          "targetHints": { "allow": ["GET"] }
+        }
+      ],
+      "collection": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/pages" }
+      ],
+      "about": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/types/page" }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/comments?post=457"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 6,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/pages/457/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 616,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/pages/457/revisions/616"
+        }
+      ],
+      "wp:attachment": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/media?parent=457" }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    }
+  },
+  {
+    "id": 455,
+    "date": "2024-02-08T19:59:25",
+    "date_gmt": "2024-02-08T18:59:25",
+    "guid": { "rendered": "https://www.brftornen.se/?page_id=455" },
+    "modified": "2024-09-10T23:30:27",
+    "modified_gmt": "2024-09-10T21:30:27",
+    "slug": "lastfaret",
+    "status": "publish",
+    "type": "page",
+    "link": "https://www.brftornen.se/lastfaret/",
+    "title": { "rendered": "LASTFARET" },
+    "content": {
+      "rendered": "\n<p class=\"has-medium-font-size\">Tillg\u00e5ng till lastfaret</p>\n\n\n\n<p></p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Vardagar mellan 06:00 \u2013 18:00</li>\n\n\n\n<li>L\u00f6rdagar mellan 06:00 \u2013 15:00</li>\n\n\n\n<li>S\u00f6ndagar mellan 06:00 \u2013 15:00</li>\n</ul>\n\n\n\n<p>F\u00f6r \u00f6ppning av d\u00f6rr fr\u00e5n insidan tryck p\u00e5 \u201dnyckel\u201d knappen.</p>\n\n\n\n<p></p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Tillg\u00e5ng till lastfaret F\u00f6r \u00f6ppning av d\u00f6rr fr\u00e5n insidan tryck p\u00e5 \u201dnyckel\u201d knappen.</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": { "_oct_exclude_from_cache": false, "footnotes": "" },
+    "class_list": ["post-455", "page", "type-page", "status-publish", "hentry"],
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.brftornen.se/wp-json/wp/v2/pages/455",
+          "targetHints": { "allow": ["GET"] }
+        }
+      ],
+      "collection": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/pages" }
+      ],
+      "about": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/types/page" }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/comments?post=455"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 5,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/pages/455/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 691,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/pages/455/revisions/691"
+        }
+      ],
+      "wp:attachment": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/media?parent=455" }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    }
+  },
+  {
+    "id": 445,
+    "date": "2024-02-08T19:51:14",
+    "date_gmt": "2024-02-08T18:51:14",
+    "guid": { "rendered": "https://www.brftornen.se/?page_id=445" },
+    "modified": "2024-02-20T20:31:22",
+    "modified_gmt": "2024-02-20T19:31:22",
+    "slug": "rad-regler-tips",
+    "status": "publish",
+    "type": "page",
+    "link": "https://www.brftornen.se/rad-regler-tips/",
+    "title": { "rendered": "R\u00c5D, REGLER &#038; TIPS" },
+    "content": {
+      "rendered": "\n<p class=\"has-medium-font-size\">Omtanke och sunt f\u00f6rnuft g\u00f6r v\u00e5rt boende trevligare. Inga regler kan ers\u00e4tta h\u00e4nsyn.</p>\n\n\n\n<p><strong>Liv och r\u00f6relse h\u00f6r till vardagen i ett flerbostadshus. Att bo n\u00e4ra andra m\u00e4nniskor st\u00e4ller d\u00e4rf\u00f6r krav p\u00e5 lyh\u00f6rdhet och omtanke. Alla ska kunna trivas, b\u00e5de med den egna bostaden och i husets gemensamma utrymmen. Visa omtanke om dem som bor runt omkring dig. \u00c4r du missn\u00f6jd med n\u00e5got? Bjud hellre in till samtal \u00f6ver en kopp kaffe \u00e4n utdela f\u00f6rmaningar.</strong></p>\n\n\n\n<p><strong>Trygghet och s\u00e4kerhet</strong></p>\n\n\n\n<p>Alla ska kunna k\u00e4nna sig trygga i sitt hem och hus. D\u00e4rf\u00f6r \u00e4r det viktigt att vi hj\u00e4lps \u00e5t och h\u00e5ller uppsikt \u00f6ver alla gemensamma utrymmen. Vi m\u00e5ste se till att husets entr\u00e9d\u00f6rrar och d\u00f6rrar till k\u00e4llare, f\u00f6rr\u00e5d, cykelrum och garage \u00e4r ordentligt l\u00e5sta. Uppt\u00e4cker du ett trasigt l\u00e5s g\u00f6r en felanm\u00e4lan s\u00e5 fort du kan. Ett annat s\u00e4tt att f\u00f6rhindra inbrott i l\u00e4genheten \u00e4r att l\u00e4ra k\u00e4nna sina grannar. D\u00e5 blir vi fler som h\u00e5ller ett vakande \u00f6ga och kan snabbt informera varandra om n\u00e5got inte verkar st\u00e5 r\u00e4tt till.</p>\n\n\n\n<p><strong>Inne i l\u00e4genheten</strong></p>\n\n\n\n<p>T\u00e4nk p\u00e5 att s\u00e4nka ljudet p\u00e5 tv, radio och musikanl\u00e4ggning p\u00e5 kv\u00e4llarna. Ska du ha fest kan du f\u00f6rbereda dina grannar genom att ber\u00e4tta att det kanske blir sent just den kv\u00e4llen.</p>\n\n\n\n<p><strong>Ute i trapphuset</strong></p>\n\n\n\n<p>St\u00e4ll inte cyklar, barnvagnar och varuvagnar i trapphuset. Trapphusen ska vara fritt fr\u00e5n saker f\u00f6r att utrymningsv\u00e4garna ska vara fria och framkomligheten bra vid sjuktransporter och brandutryckning. Brandmyndigheterna kommer och besiktigar v\u00e5ra trapphus med j\u00e4mna mellanrum. Rollatorer och barnvagnar f\u00e5r f\u00f6rvaras i f\u00f6rr\u00e5den p\u00e5 plan 3.</p>\n\n\n\n<p><strong>N\u00e4r vi kastar sopor</strong></p>\n\n\n\n<p>P\u00e5 v\u00e5ning 0 finns s\u00e4rskilda beh\u00e5llare f\u00f6r matavfall, glas, papper, batterier, tidningar, plast och pappersf\u00f6rpackningar. All annan typ av avfall ska forslas bort av den boende. En container hyrs in n\u00e5gra g\u00e5nger per \u00e5r och st\u00e4lls i lastfaret. D\u00e5 kan du sl\u00e4nga s\u00e5dant som ej ska sl\u00e4ngas i v\u00e5rt \u00e5tervinningsrum. Ett s\u00e4rskilt meddelande kommer att skickas ut n\u00e4r det \u00e4r dags. Fram till dess m\u00e5ste du utnyttja den \u00e5tervinningsstation som finns i kommunen.</p>\n\n\n\n<p><strong>Balkonger</strong></p>\n\n\n\n<p>T\u00e4nk p\u00e5 att inte skaka mattor, s\u00e4ngkl\u00e4der o dylikt \u00f6ver balkongr\u00e4cket. Det \u00e4r inte trevligt f\u00f6r dom som bor under. T\u00e4nk ocks\u00e5 p\u00e5 n\u00e4r du vattnar dina v\u00e4xter, att vattnet inte rinner ner till grannen under. Du f\u00e5r heller inte sl\u00e4nga/l\u00e4gga ut br\u00f6d/mat till f\u00e5glarna.</p>\n\n\n\n<p><strong>Grillning p\u00e5 balkong</strong></p>\n\n\n\n<p>Brf Tornen har tagit ett beslut om att ej till\u00e5ta grillning eller r\u00f6kning av livsmedel p\u00e5 balkongen. Ett av sk\u00e4len \u00e4r att risken f\u00f6r att r\u00f6k och matos kan orsaka st\u00f6rningar f\u00f6r andra boende. Ett annat sk\u00e4l \u00e4r att grilla eller anv\u00e4nda en r\u00f6k p\u00e5 en inglasad balkong eller direkt under en \u00e4r direkt livsfarligt. Orsaken \u00e4r att man kan drabbas av kolmonoxidf\u00f6rgiftning om r\u00f6kgaserna inte ventileras bort.</p>\n\n\n\n<p><strong>Du best\u00e4mmer om din l\u00e4genhet</strong></p>\n\n\n\n<p>Du som bostadsr\u00e4ttshavare ansvarar sj\u00e4lv f\u00f6r att l\u00e4genheten h\u00e5lls i gott skick inv\u00e4ndigt. Hur ansvaret f\u00f6rdelas mellan dig och bostadsr\u00e4ttsf\u00f6reningen framg\u00e5r av stadgarna. Du best\u00e4mmer om och n\u00e4r det \u00e4r dags att tapetsera, m\u00e5la eller g\u00f6ra andra f\u00f6rb\u00e4ttringar. Vill du g\u00f6ra st\u00f6rre f\u00f6r\u00e4ndringar i din l\u00e4genhet m\u00e5ste du f\u00f6rst prata med styrelsen och kontrollera om \u00e5tg\u00e4rden kr\u00e4ver tillst\u00e5nd. Det \u00e4r ocks\u00e5 viktigt att du snabbt anm\u00e4ler eventuella fel och brister i l\u00e4genheten som bostadsr\u00e4ttf\u00f6reningen enligt stadgarna ansvarar f\u00f6r.</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Omtanke och sunt f\u00f6rnuft g\u00f6r v\u00e5rt boende trevligare. Inga regler kan ers\u00e4tta h\u00e4nsyn. Liv och r\u00f6relse h\u00f6r till vardagen i ett flerbostadshus. Att bo n\u00e4ra andra m\u00e4nniskor st\u00e4ller d\u00e4rf\u00f6r krav &#8230;</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": { "_oct_exclude_from_cache": false, "footnotes": "" },
+    "class_list": ["post-445", "page", "type-page", "status-publish", "hentry"],
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.brftornen.se/wp-json/wp/v2/pages/445",
+          "targetHints": { "allow": ["GET"] }
+        }
+      ],
+      "collection": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/pages" }
+      ],
+      "about": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/types/page" }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/comments?post=445"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 6,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/pages/445/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 608,
+          "href": "https://www.brftornen.se/wp-json/wp/v2/pages/445/revisions/608"
+        }
+      ],
+      "wp:attachment": [
+        { "href": "https://www.brftornen.se/wp-json/wp/v2/media?parent=445" }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    }
+  }
+]
