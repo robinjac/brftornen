@@ -18,7 +18,7 @@ import {
   Info,
 } from "lucide-react";
 import i18n from "../../i18n/sv.json";
-import data from "../../test/general.json"
+import data from "../../test/general.json";
 
 const features = [
   {
@@ -123,14 +123,13 @@ const Home = () => {
   return (
     <div className="space-y-8">
       {/* Hero Section */}
-      <div className="bg-[url(/brftornen.jpg)] bg-cover bg-center -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 py-12 text-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl font-bold mb-4">
-            Welcome to Our Housing Association
+
+      <div className="-mx-4 sm:-mx-6 lg:-mx-8 -mt-8 bg-[url(/brftornen.jpg)] bg-cover bg-center w-screen min-h-[50vh] sm:min-h-[80vh] flex justify-center text-white">
+        <div className="relative z-10 pt-10 sm:pt-20 max-w-4xl mx-auto text-center px-4">
+          <h1 className="text-2xl sm:text-4xl font-extrabold mb-6">
+            BRF Tornen Järfälla
           </h1>
-          <p className="text-xl">
-            Your community hub for information, services, and resources.
-          </p>
+          <p className="text-xl sm:text-2xl">Tryggt och trivsamt</p>
         </div>
       </div>
 
