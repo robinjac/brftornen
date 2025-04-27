@@ -12,7 +12,7 @@ const Layout = () => {
 
   const menuItems = [
     { path: "/news", label: i18n.layout.news },
-    { path: "/report-fault", label: i18n.layout.reportFault },
+    { path: data.faultReportHref, label: i18n.layout.reportFault },
     { path: "/contact", label: i18n.layout.contact },
     { path: "/board", label: i18n.layout.board },
     { path: "/documents", label: i18n.layout.documents },

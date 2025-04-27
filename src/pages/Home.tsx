@@ -18,6 +18,7 @@ import {
   Info,
 } from "lucide-react";
 import i18n from "../../i18n/sv.json";
+import data from "../../test/general.json"
 
 const features = [
   {
@@ -29,7 +30,7 @@ const features = [
   {
     icon: Tool,
     title: i18n.layout.reportFault,
-    path: "/report-fault",
+    path: data.faultReportHref,
     description: i18n.features.reportFaultDescription,
   },
   {

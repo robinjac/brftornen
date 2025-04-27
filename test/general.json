@@ -1,5 +1,6 @@
 {
     "phone": "+46 123 456 789",
     "email": "info@housingassociation.com",
-    "address": "Example Street 123, City"
+    "address": "Example Street 123, City",
+    "faultReportHref": "https://www.hsb.se/stockholm/om-hsb/kontakt/felanmalan-information/felanmalan-brf/"
 }
