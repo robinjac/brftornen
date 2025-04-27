@@ -24,7 +24,7 @@
     "reportAFault": "Report a Fault",
     "emergency": "Emergency",
     "urgentMatters": "For urgent matters outside office hours:",
-    "copyright": "© {year} BRF Tornen. All rights reserved.",
+    "copyright": "© {0} BRF Tornen. All rights reserved.",
     "more": "More"
   },
   "reportSubmitted": {

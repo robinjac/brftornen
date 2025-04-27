@@ -24,7 +24,7 @@
     "reportAFault": "Rapportera ett fel",
     "emergency": "Akut",
     "urgentMatters": "För akuta ärenden utanför kontorstid:",
-    "copyright": "© {year} BRF Tornen. Alla rättigheter reserverade.",
+    "copyright": "© {0} BRF Tornen. Alla rättigheter reserverade.",
     "more": "Mer"
   },
   "reportSubmitted": {
