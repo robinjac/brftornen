@@ -1,6 +1,5 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import { Bell, PenTool as Tool, Phone, Users, FileText, Home as HomeIcon, Waves, Timer, Recycle, Volume2, Building2, Flame, Book, Bike, History as HistoryIcon, Home as Home2, Info } from 'lucide-react';
+import { Bell, PenTool as Tool, Phone, Users, FileText, Home as HomeIcon, Timer, Recycle, Volume2, Building2, Flame, Book, Bike, History as HistoryIcon, Home as Home2, Info } from 'lucide-react';
 
 const features = [
   { icon: Bell, title: 'News', path: '/news', description: 'Latest updates and announcements' },
