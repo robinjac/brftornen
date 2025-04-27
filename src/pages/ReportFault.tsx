@@ -132,14 +132,6 @@ const ReportFault = () => {
           </button>
         </form>
       </div>
-
-      <div className="mt-6 bg-yellow-50 border border-yellow-200 rounded-lg p-4">
-        <h3 className="text-yellow-800 font-medium mb-2">Emergency Contact</h3>
-        <p className="text-yellow-700">
-          For urgent matters that require immediate attention (e.g., water damage, power outage),
-          please call our emergency number: <strong>+46 123 456 789</strong>
-        </p>
-      </div>
     </div>
   );
 };
