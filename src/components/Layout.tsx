@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import { Home, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Layout = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -33,8 +33,9 @@ const Layout = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link to="/" className="flex items-center space-x-2">
-              <Home className="h-6 w-6 text-blue-600" />
-              <span className="font-semibold text-xl">BRF Tornen</span>
+              <div className="bg-[url('/brftornen-logga.jpg')] bg-cover h-10 w-10"></div>
+              {/* <Home className="h-6 w-6 text-blue-600" /> */}
+              <span className="font-semibold text-xl">BRF Tornen Järfälla</span>
             </Link>
             
             {/* Mobile menu button */}
