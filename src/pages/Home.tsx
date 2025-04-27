@@ -1,23 +1,121 @@
-import { Link } from 'react-router-dom';
-import { Bell, PenTool as Tool, Phone, Users, FileText, Home as HomeIcon, Timer, Recycle, Volume2, Building2, Flame, Book, Bike, History as HistoryIcon, Home as Home2, Info } from 'lucide-react';
+import { Link } from "react-router-dom";
+import {
+  Bell,
+  PenTool as Tool,
+  Phone,
+  Users,
+  FileText,
+  Home as HomeIcon,
+  Timer,
+  Recycle,
+  Volume2,
+  Building2,
+  Flame,
+  Book,
+  Bike,
+  History as HistoryIcon,
+  Home as Home2,
+  Info,
+} from "lucide-react";
+import i18n from "../../i18n/sv.json";
 
 const features = [
-  { icon: Bell, title: 'News', path: '/news', description: 'Latest updates and announcements' },
-  { icon: Tool, title: 'Report a Fault', path: '/report-fault', description: 'Submit maintenance requests' },
-  { icon: Phone, title: 'Contact', path: '/contact', description: 'Get in touch with us' },
-  { icon: Users, title: 'The Board', path: '/board', description: 'Meet our board members' },
-  { icon: FileText, title: 'Documents', path: '/documents', description: 'Access important documents' },
-  { icon: HomeIcon, title: 'Common Areas', path: '/common-areas', description: 'Guidelines for shared spaces' },
-  { icon: Timer, title: 'Laundry', path: '/laundry', description: 'Laundry room information' },
-  { icon: Recycle, title: 'Recycling', path: '/recycling', description: 'Waste management guide' },
-  { icon: Volume2, title: 'Disturbance', path: '/disturbance', description: 'Handle noise complaints' },
-  { icon: Building2, title: 'Facilities', path: '/facilities', description: 'Available premises' },
-  { icon: Flame, title: 'Sauna', path: '/sauna', description: 'Sauna booking and rules' },
-  { icon: Book, title: 'Rules & Tips', path: '/rules', description: 'Living guidelines' },
-  { icon: Bike, title: 'Storage', path: '/storage', description: 'Bicycle and basement storage' },
-  { icon: HistoryIcon, title: 'History', path: '/history', description: 'Our association\'s story' },
-  { icon: Home2, title: 'Realtors', path: '/realtors', description: 'Information for agents' },
-  { icon: Info, title: 'Info', path: '/info', description: 'General information' }
+  {
+    icon: Bell,
+    title: i18n.layout.news,
+    path: "/news",
+    description: i18n.features.newsDescription,
+  },
+  {
+    icon: Tool,
+    title: i18n.layout.reportFault,
+    path: "/report-fault",
+    description: i18n.features.reportFaultDescription,
+  },
+  {
+    icon: Phone,
+    title: i18n.layout.contact,
+    path: "/contact",
+    description: i18n.features.contactDescription,
+  },
+  {
+    icon: Users,
+    title: i18n.layout.board,
+    path: "/board",
+    description: i18n.features.theBoardDescription,
+  },
+  {
+    icon: FileText,
+    title: i18n.layout.documents,
+    path: "/documents",
+    description: i18n.features.documentsDescription,
+  },
+  {
+    icon: HomeIcon,
+    title: i18n.layout.commonAreas,
+    path: "/common-areas",
+    description: i18n.features.commonAreasDescription,
+  },
+  {
+    icon: Timer,
+    title: i18n.layout.laundry,
+    path: "/laundry",
+    description: i18n.features.laundryDescription,
+  },
+  {
+    icon: Recycle,
+    title: i18n.layout.recycling,
+    path: "/recycling",
+    description: i18n.features.recyclingDescription,
+  },
+  {
+    icon: Volume2,
+    title: i18n.layout.disturbance,
+    path: "/disturbance",
+    description: i18n.features.disturbanceDescription,
+  },
+  {
+    icon: Building2,
+    title: i18n.layout.facilities,
+    path: "/facilities",
+    description: i18n.features.facilitiesDescription,
+  },
+  {
+    icon: Flame,
+    title: i18n.layout.sauna,
+    path: "/sauna",
+    description: i18n.features.saunaDescription,
+  },
+  {
+    icon: Book,
+    title: i18n.layout.rules,
+    path: "/rules",
+    description: i18n.features.rulesTipsDescription,
+  },
+  {
+    icon: Bike,
+    title: i18n.layout.storage,
+    path: "/storage",
+    description: i18n.features.storageDescription,
+  },
+  {
+    icon: HistoryIcon,
+    title: i18n.layout.history,
+    path: "/history",
+    description: i18n.features.historyDescription,
+  },
+  {
+    icon: Home2,
+    title: i18n.layout.realtors,
+    path: "/realtors",
+    description: i18n.features.realtorsDescription,
+  },
+  {
+    icon: Info,
+    title: i18n.layout.info,
+    path: "/info",
+    description: i18n.features.infoDescription,
+  },
 ];
 
 const Home = () => {
@@ -26,8 +124,12 @@ const Home = () => {
       {/* Hero Section */}
       <div className="bg-[url(/brftornen.jpg)] bg-cover bg-center -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 py-12 text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl font-bold mb-4">Welcome to Our Housing Association</h1>
-          <p className="text-xl">Your community hub for information, services, and resources.</p>
+          <h1 className="text-4xl font-bold mb-4">
+            Welcome to Our Housing Association
+          </h1>
+          <p className="text-xl">
+            Your community hub for information, services, and resources.
+          </p>
         </div>
       </div>
 
@@ -51,9 +153,12 @@ const Home = () => {
 
       {/* Emergency Contact */}
       <div className="bg-red-50 border border-red-200 rounded-lg p-6 mt-8">
-        <h2 className="text-xl font-semibold text-red-700 mb-2">Emergency Contact</h2>
+        <h2 className="text-xl font-semibold text-red-700 mb-2">
+          Emergency Contact
+        </h2>
         <p className="text-red-600">
-          For urgent matters outside office hours, please call: <span className="font-bold">+46 123 456 789</span>
+          For urgent matters outside office hours, please call:
+          <span className="font-bold">+46 123 456 789</span>
         </p>
       </div>
     </div>
