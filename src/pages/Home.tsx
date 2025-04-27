@@ -150,17 +150,6 @@ const Home = () => {
           );
         })}
       </div>
-
-      {/* Emergency Contact */}
-      <div className="bg-red-50 border border-red-200 rounded-lg p-6 mt-8">
-        <h2 className="text-xl font-semibold text-red-700 mb-2">
-          Emergency Contact
-        </h2>
-        <p className="text-red-600">
-          For urgent matters outside office hours, please call:
-          <span className="font-bold">+46 123 456 789</span>
-        </p>
-      </div>
     </div>
   );
 };
