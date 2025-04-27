@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import { useState, type FormEvent } from 'react';
 import { PenTool as Tool, Check } from 'lucide-react';
 
 const ReportFault = () => {
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     setSubmitted(true);
     // Here you would typically handle the form submission
