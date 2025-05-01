@@ -71,7 +71,7 @@ const Layout = () => {
 
       {/* Hero Section */}
       <img
-        src="/brftornen.jpg"
+        src="brftornen.jpg"
         alt="BRF Tornen"
         className="shadow-md mx-auto w-full max-w-7xl h-auto"
       />
