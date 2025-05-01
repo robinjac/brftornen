@@ -19,8 +19,9 @@ import {
 } from "lucide-react";
 import i18n from "../../i18n/sv.json";
 import data from "../../test/general.json";
+import pages from "../../test/pages-response.json"
 
-const features = [
+/* const features = [
   {
     icon: Bell,
     title: i18n.layout.news,
@@ -117,24 +118,24 @@ const features = [
     path: "/info",
     description: i18n.features.infoDescription,
   },
-];
+]; */
 
 const Home = () => {
   return (
     <div className="space-y-8">
       {/* Quick Links Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {features.map((feature) => {
-          const Icon = feature.icon;
+        {pages.map((page) => {
+          // const Icon = feature.icon;
           return (
             <Link
-              key={feature.path}
-              to={feature.path}
+              key={page.slug}
+              to={page.slug}
               className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200"
             >
-              <Icon className="h-8 w-8 text-blue-600 mb-3" />
-              <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
+{/*               <Icon className="h-8 w-8 text-blue-600 mb-3" /> */}
+              <h3 className="text-lg font-semibold mb-2">{page.title.rendered}</h3>
+             {/*  <p className="text-gray-600">{feature.description}</p> */}
             </Link>
           );
         })}
