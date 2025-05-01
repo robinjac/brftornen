@@ -49,7 +49,7 @@ const Layout = () => {
                 <button className="text-gray-500 flex items-center space-x-1 group-hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
                   <Menu className="h-6 w-6" /><span>Information</span>
                 </button>
-                <div className="absolute left-0 mt-2 w-fit rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden group-hover:block">
+                <div className="absolute right-0 mt-2 w-fit rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden group-hover:block">
                   <div className="py-1">
                     {pages.map((item) => (
                       <Link
