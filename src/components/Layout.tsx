@@ -32,7 +32,7 @@ const Layout = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       {/* Header */}
-      <header className="sticky top-0 z-10 bg-white shadow-sm">
+      <header className="sticky top-0 z-10 bg-white shadow-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link to="/" className="flex items-center space-x-2">
@@ -105,8 +105,15 @@ const Layout = () => {
         )}
       </header>
 
+      {/* Hero Section */}
+      <img
+        src="/brftornen.jpg"
+        alt="BRF Tornen"
+        className="shadow-md mx-auto w-full max-w-7xl h-auto"
+      />
+
       {/* Main content */}
-      <main className="mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="max-w-7xl w-full bg-white mx-auto px-4 sm:px-6 lg:px-8 py-8 shadow-md">
         <Outlet />
       </main>
 
@@ -118,9 +125,15 @@ const Layout = () => {
               <h3 className="text-lg font-semibold mb-4">
                 {i18n.layout.contactUs}
               </h3>
-              <p>{i18n.layout.email}: {data.email}</p>
-              <p>{i18n.layout.phone}: {data.phone}</p>
-              <p>{i18n.layout.address}: {data.address}</p>
+              <p>
+                {i18n.layout.email}: {data.email}
+              </p>
+              <p>
+                {i18n.layout.phone}: {data.phone}
+              </p>
+              <p>
+                {i18n.layout.address}: {data.address}
+              </p>
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-4">

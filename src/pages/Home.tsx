@@ -122,17 +122,6 @@ const features = [
 const Home = () => {
   return (
     <div className="space-y-8">
-      {/* Hero Section */}
-
-      <div className="-mx-4 sm:-mx-6 lg:-mx-8 -mt-8 bg-[url(/brftornen.jpg)] bg-cover bg-center w-screen min-h-[50vh] sm:min-h-[80vh] flex justify-center text-white">
-        <div className="relative pt-10 sm:pt-20 max-w-4xl mx-auto text-center px-4">
-          <h1 className="text-2xl sm:text-4xl font-extrabold mb-6">
-            BRF Tornen Järfälla
-          </h1>
-          <p className="text-xl sm:text-2xl">Tryggt och trivsamt</p>
-        </div>
-      </div>
-
       {/* Quick Links Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {features.map((feature) => {
@@ -141,7 +130,7 @@ const Home = () => {
             <Link
               key={feature.path}
               to={feature.path}
-              className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200"
+              className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200"
             >
               <Icon className="h-8 w-8 text-blue-600 mb-3" />
               <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
