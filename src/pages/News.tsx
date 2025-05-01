@@ -5,7 +5,7 @@ const News = () => {
   const [pages, setPages] = useState<WordpressPost[]>([]);
 
   useEffect(() => {
-    fetch(`https://www.brftornen.se/wp-json/wp/v2/posts?per_page=100`)
+    fetch(`https://www.brftornen.se/wp-json/wp/v2/posts`)
       .then((res) => res.json())
       .then(setPages);
   }, []);

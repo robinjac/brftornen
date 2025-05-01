@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { replacePlaceholders } from "../utils";
@@ -7,27 +7,17 @@ import data from "../../test/general.json";
 
 const Layout = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [pages, setPages] = useState<WordpressPage[]>([]);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
-  const menuItems = [
-    { path: "/news", label: i18n.layout.news },
-    { path: data.faultReportHref, label: i18n.layout.reportFault },
-    { path: "/contact", label: i18n.layout.contact },
-    { path: "/board", label: i18n.layout.board },
-    { path: "/documents", label: i18n.layout.documents },
-    { path: "/common-areas", label: i18n.layout.commonAreas },
-    { path: "/laundry", label: i18n.layout.laundry },
-    { path: "/recycling", label: i18n.layout.recycling },
-    { path: "/disturbance", label: i18n.layout.disturbance },
-    { path: "/facilities", label: i18n.layout.facilities },
-    { path: "/sauna", label: i18n.layout.sauna },
-    { path: "/rules", label: i18n.layout.rules },
-    { path: "/storage", label: i18n.layout.storage },
-    { path: "/history", label: i18n.layout.history },
-    { path: "/realtors", label: i18n.layout.realtors },
-    { path: "/info", label: i18n.layout.info },
-  ];
+  useEffect(() => {
+    fetch(`https://www.brftornen.se/wp-json/wp/v2/pages?per_page=100`)
+      .then((res) => res.json())
+      .then(setPages);
+  }, []);
+
+  const menuItems = [{ path: "/", label: i18n.layout.news }];
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
@@ -55,28 +45,19 @@ const Layout = () => {
 
             {/* Desktop menu */}
             <nav className="hidden lg:flex lg:space-x-8">
-              {menuItems.slice(0, 4).map((item) => (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  {item.label}
-                </Link>
-              ))}
               <div className="relative group">
-                <button className="text-gray-500 group-hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
-                  More
+                <button className="text-gray-500 flex items-center space-x-1 group-hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
+                  <Menu className="h-6 w-6" /><span>Information</span>
                 </button>
-                <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden group-hover:block">
+                <div className="absolute left-0 mt-2 w-fit rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden group-hover:block">
                   <div className="py-1">
-                    {menuItems.slice(4).map((item) => (
+                    {pages.map((item) => (
                       <Link
-                        key={item.path}
-                        to={item.path}
+                        key={item.slug}
+                        to={item.slug}
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                       >
-                        {item.label}
+                        <p dangerouslySetInnerHTML={{__html: item.title.rendered}} />
                       </Link>
                     ))}
                   </div>
@@ -113,24 +94,24 @@ const Layout = () => {
       />
 
       {/* Main content */}
-      <main className="max-w-7xl w-full bg-white mx-auto px-4 sm:px-6 lg:px-8 py-8 shadow-md">
+      <main className="max-w-7xl flex flex-col w-full bg-white mx-auto px-4 sm:px-6 lg:px-8 py-8 shadow-md">
         <Outlet />
       </main>
 
       {/* Footer */}
       <footer className="bg-gray-800 text-white mt-auto">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div>
-              <h3 className="text-lg font-semibold mb-4">
-                {i18n.layout.contactUs}
-              </h3>
-              <p>
-                {i18n.layout.email}: {data.email}
-              </p>
-              <p>
-                {i18n.layout.address}: {data.address}
-              </p>
-            </div>
+          <div>
+            <h3 className="text-lg font-semibold mb-4">
+              {i18n.layout.contactUs}
+            </h3>
+            <p>
+              {i18n.layout.email}: {data.email}
+            </p>
+            <p>
+              {i18n.layout.address}: {data.address}
+            </p>
+          </div>
           <div className="mt-8 pt-8 border-t border-gray-700 text-center">
             <p>
               {replacePlaceholders(
