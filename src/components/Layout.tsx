@@ -25,8 +25,6 @@ const Layout = () => {
       .then(setPages);
   }, []);
 
-  const menuItems = [{ path: "/", label: i18n.layout.news }];
-
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       {/* Header */}
@@ -40,7 +38,7 @@ const Layout = () => {
             </Link>
 
             {/* Mobile menu button */}
-            <button
+           {/*  <button
               onClick={toggleMenu}
               className="lg:hidden p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100"
             >
@@ -49,23 +47,23 @@ const Layout = () => {
               ) : (
                 <Menu className="h-6 w-6" />
               )}
-            </button>
+            </button> */}
 
             {/* Desktop menu */}
-            <nav className="hidden lg:flex lg:space-x-8">
+            <nav>
               <div className="relative group">
                 <Sheet>
                   <SheetTrigger>
                     <button className="text-gray-500 cursor-pointer flex items-center space-x-1 group-hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
                       <Menu className="h-6 w-6" />
-                      <span>Information</span>
+                      <span className="hidden lg:flex">Information</span>
                     </button>
                   </SheetTrigger>
                   <SheetContent>
                     <SheetHeader>
                       <SheetTitle>Information</SheetTitle>
                     </SheetHeader>
-                    <SheetDescription className="px-4">
+                    <SheetDescription className="px-4 overflow-auto">
                       {pages.map((item) => (
                         <Link
                           key={item.slug}
@@ -86,24 +84,6 @@ const Layout = () => {
             </nav>
           </div>
         </div>
-
-        {/* Mobile menu */}
-        {isMenuOpen && (
-          <div className="lg:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1">
-              {menuItems.map((item) => (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.label}
-                </Link>
-              ))}
-            </div>
-          </div>
-        )}
       </header>
 
       {/* Hero Section */}

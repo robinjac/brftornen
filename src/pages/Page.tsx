@@ -16,16 +16,14 @@ const WordpressPageView = () => {
   if (!page) return <p>Loading...</p>;
 
   return (
-    <>
+    <div className="prose">
       <h1
-        className="text-3xl font-bold mb-6"
-        dangerouslySetInnerHTML={{ __html: page.title.rendered }}
+        dangerouslySetInnerHTML={{ __html: page.title.rendered.replace(/\//g, ' / ') }}
       />
       <div
-        className="prose"
         dangerouslySetInnerHTML={{ __html: page.content.rendered }}
       />
-    </>
+    </div>
   );
 };
 
