@@ -21,7 +21,7 @@ const News = () => {
 
       <div className="grid gap-6">
         {pages.map((item) => (
-          <article key={item.id} className="bg-white rounded-lg shadow-sm p-6">
+          <article key={item.id} className="px-8 py-6">
             <div className="flex justify-between items-start mb-4">
               <div>
                 <h2 className="text-xl font-semibold">{item.title.rendered}</h2>
