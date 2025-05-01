@@ -1,4 +1,4 @@
-export type WordpressBase = {
+type WordpressBase = {
   id: number;
   date: string;
   date_gmt: string;
@@ -22,12 +22,12 @@ export type WordpressBase = {
   _links: Record<string, any>;
 };
 
-export type WordpressPage = WordpressBase & {
+type WordpressPage = WordpressBase & {
   parent: number;
   menu_order: number;
 };
 
-export type WordpressPost = WordpressBase & {
+type WordpressPost = WordpressBase & {
   sticky: boolean;
   format: string;
   categories: number[];
