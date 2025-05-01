@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, Outlet } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 import { replacePlaceholders } from "../utils";
 import i18n from "../../i18n/sv.json";
 import data from "../../test/general.json";
@@ -14,10 +14,7 @@ import {
 } from "@/components/ui/sheet";
 
 const Layout = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [pages, setPages] = useState<WordpressPage[]>([]);
-
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   useEffect(() => {
     fetch(`https://www.brftornen.se/wp-json/wp/v2/pages?per_page=100`)
@@ -36,20 +33,6 @@ const Layout = () => {
               {/* <Home className="h-6 w-6 text-blue-600" /> */}
               <span className="font-semibold text-xl">BRF Tornen Järfälla</span>
             </Link>
-
-            {/* Mobile menu button */}
-           {/*  <button
-              onClick={toggleMenu}
-              className="lg:hidden p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100"
-            >
-              {isMenuOpen ? (
-                <X className="h-6 w-6" />
-              ) : (
-                <Menu className="h-6 w-6" />
-              )}
-            </button> */}
-
-            {/* Desktop menu */}
             <nav>
               <div className="relative group">
                 <Sheet>
