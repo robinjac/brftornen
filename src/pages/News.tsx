@@ -1,16 +1,26 @@
+import { useState, useEffect } from "react";
 import { Bell } from "lucide-react";
-import posts from "../../test/posts-response.json";
 
 const News = () => {
+  const [pages, setPages] = useState<WordpressPost[]>([]);
+
+  useEffect(() => {
+    fetch(`https://www.brftornen.se/wp-json/wp/v2/posts?per_page=100`)
+      .then((res) => res.json())
+      .then(setPages);
+  }, []);
+
+  if (pages.length === 0) return <p>Loading...</p>;
+
   return (
     <div className="space-y-6">
       <div className="flex items-center space-x-2">
         <Bell className="h-6 w-6 text-blue-600" />
-        <h1 className="text-3xl font-bold">Senaste Nyheterna</h1>
+        <h1 className="text-3xl font-bold">Nyheter</h1>
       </div>
 
       <div className="grid gap-6">
-        {posts.map((item) => (
+        {pages.map((item) => (
           <article key={item.id} className="bg-white rounded-lg shadow-sm p-6">
             <div className="flex justify-between items-start mb-4">
               <div>
@@ -20,7 +30,10 @@ const News = () => {
                 </p>
               </div>
             </div>
-            <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: item.content.rendered }} />
+            <div
+              className="prose max-w-none"
+              dangerouslySetInnerHTML={{ __html: item.content.rendered }}
+            />
           </article>
         ))}
       </div>

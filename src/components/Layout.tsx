@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { replacePlaceholders } from "../utils";
@@ -6,7 +6,7 @@ import i18n from "../../i18n/sv.json";
 import data from "../../test/general.json";
 
 const Layout = () => {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -120,7 +120,6 @@ const Layout = () => {
       {/* Footer */}
       <footer className="bg-gray-800 text-white mt-auto">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <h3 className="text-lg font-semibold mb-4">
                 {i18n.layout.contactUs}
@@ -129,42 +128,9 @@ const Layout = () => {
                 {i18n.layout.email}: {data.email}
               </p>
               <p>
-                {i18n.layout.phone}: {data.phone}
-              </p>
-              <p>
                 {i18n.layout.address}: {data.address}
               </p>
             </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">
-                {i18n.layout.quickLinks}
-              </h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link to="/news" className="hover:text-blue-300">
-                    {i18n.layout.news}
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/contact" className="hover:text-blue-300">
-                    {i18n.layout.contact}
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/report-fault" className="hover:text-blue-300">
-                    {i18n.layout.reportFault}
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">
-                {i18n.layout.emergency}
-              </h3>
-              <p>{i18n.layout.urgentMatters}</p>
-              <p className="text-xl font-bold">{data.phone}</p>
-            </div>
-          </div>
           <div className="mt-8 pt-8 border-t border-gray-700 text-center">
             <p>
               {replacePlaceholders(
