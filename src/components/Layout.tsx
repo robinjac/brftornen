@@ -9,6 +9,7 @@ import {
   SheetContent,
   SheetHeader,
   SheetTitle,
+  SheetDescription,
   SheetTrigger,
 } from "@/components/ui/sheet";
 
@@ -64,19 +65,21 @@ const Layout = () => {
                     <SheetHeader>
                       <SheetTitle>Information</SheetTitle>
                     </SheetHeader>
-                    {pages.map((item) => (
-                      <Link
-                        key={item.slug}
-                        to={item.slug}
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                      >
-                        <p
-                          dangerouslySetInnerHTML={{
-                            __html: item.title.rendered,
-                          }}
-                        />
-                      </Link>
-                    ))}
+                    <SheetDescription className="px-4">
+                      {pages.map((item) => (
+                        <Link
+                          key={item.slug}
+                          to={item.slug}
+                          className="block py-2 text-sm text-gray-700 hover:text-gray-900"
+                        >
+                          <p
+                            dangerouslySetInnerHTML={{
+                              __html: item.title.rendered,
+                            }}
+                          />
+                        </Link>
+                      ))}
+                    </SheetDescription>
                   </SheetContent>
                 </Sheet>
               </div>
