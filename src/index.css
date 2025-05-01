@@ -1,14 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
-.wp-block-file {
+/* .wp-block-file {
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 0.5rem;
   background-color: #f9f9f9;
   margin-bottom: 1rem;
-}
+} */
 
 .wp-block-file__button {
   display: inline-block;
@@ -25,11 +24,11 @@
   background-color: #1e40af;
 }
 
-.wp-block-file__embed {
+/* .wp-block-file__embed {
   margin-bottom: 1rem;
   border: 1px solid #ccc;
   border-radius: 0.375rem;
-}
+} */
 
 [id^="wp-block-file--media-"] {
   display: none;
