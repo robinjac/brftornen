@@ -4,6 +4,13 @@ import { Menu, X } from "lucide-react";
 import { replacePlaceholders } from "../utils";
 import i18n from "../../i18n/sv.json";
 import data from "../../test/general.json";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 const Layout = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -46,22 +53,32 @@ const Layout = () => {
             {/* Desktop menu */}
             <nav className="hidden lg:flex lg:space-x-8">
               <div className="relative group">
-                <button className="text-gray-500 flex items-center space-x-1 group-hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
-                  <Menu className="h-6 w-6" /><span>Information</span>
-                </button>
-                <div className="absolute right-0 mt-2 w-fit rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden group-hover:block">
-                  <div className="py-1">
+                <Sheet>
+                  <SheetTrigger>
+                    <button className="text-gray-500 cursor-pointer flex items-center space-x-1 group-hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
+                      <Menu className="h-6 w-6" />
+                      <span>Information</span>
+                    </button>
+                  </SheetTrigger>
+                  <SheetContent>
+                    <SheetHeader>
+                      <SheetTitle>Information</SheetTitle>
+                    </SheetHeader>
                     {pages.map((item) => (
                       <Link
                         key={item.slug}
                         to={item.slug}
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                       >
-                        <p dangerouslySetInnerHTML={{__html: item.title.rendered}} />
+                        <p
+                          dangerouslySetInnerHTML={{
+                            __html: item.title.rendered,
+                          }}
+                        />
                       </Link>
                     ))}
-                  </div>
-                </div>
+                  </SheetContent>
+                </Sheet>
               </div>
             </nav>
           </div>
