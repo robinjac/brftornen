@@ -36,11 +36,9 @@ const Layout = () => {
             <nav>
               <div className="relative group">
                 <Sheet>
-                  <SheetTrigger>
-                    <button className="text-gray-500 cursor-pointer flex items-center space-x-1 group-hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
-                      <Menu className="h-6 w-6" />
-                      <span className="hidden lg:flex">Information</span>
-                    </button>
+                  <SheetTrigger className="text-gray-500 cursor-pointer flex items-center space-x-1 group-hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
+                    <Menu className="h-6 w-6" />
+                    <span className="hidden lg:flex">Information</span>
                   </SheetTrigger>
                   <SheetContent>
                     <SheetHeader>
