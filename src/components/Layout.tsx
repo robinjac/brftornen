@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, Outlet } from "react-router-dom";
-import { Menu } from "lucide-react";
+import { Info } from "lucide-react";
 import { replacePlaceholders } from "../utils";
 import i18n from "../../i18n/sv.json";
 import data from "../../test/general.json";
@@ -38,7 +38,7 @@ const Layout = () => {
               <div className="relative group">
                 <Sheet open={open} onOpenChange={setOpen}>
                   <SheetTrigger className="text-gray-500 cursor-pointer flex items-center space-x-1 group-hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
-                    <Menu className="h-6 w-6" />
+                    <Info className="h-6 w-6" />
                     <span className="hidden lg:flex">Information</span>
                   </SheetTrigger>
                   <SheetContent>
