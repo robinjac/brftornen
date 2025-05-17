@@ -15,6 +15,7 @@ import {
 
 const Layout = () => {
   const [pages, setPages] = useState<WordpressPage[]>([]);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     fetch(`https://www.brftornen.se/wp-json/wp/v2/pages?per_page=100`)
@@ -35,7 +36,7 @@ const Layout = () => {
             </Link>
             <nav>
               <div className="relative group">
-                <Sheet>
+                <Sheet open={open} onOpenChange={setOpen}>
                   <SheetTrigger className="text-gray-500 cursor-pointer flex items-center space-x-1 group-hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
                     <Menu className="h-6 w-6" />
                     <span className="hidden lg:flex">Information</span>
@@ -44,7 +45,7 @@ const Layout = () => {
                     <SheetHeader>
                       <SheetTitle>Information</SheetTitle>
                     </SheetHeader>
-                    <SheetDescription className="px-4 overflow-auto">
+                    <SheetDescription onClickCapture={() => setOpen(false)} className="px-4 overflow-auto">
                       {pages.map((item) => (
                         <Link
                           key={item.slug}
