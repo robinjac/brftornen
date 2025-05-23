@@ -13,13 +13,11 @@ const News = () => {
   if (pages.length === 0) return <p>Loading...</p>;
 
   return (
-    <div className="space-y-6">
+    <>
       <div className="flex items-center space-x-2">
         <Bell className="h-6 w-6 text-blue-600" />
-        <h1 className="text-3xl font-bold">Nyheter</h1>
+        <h1 className="text-3xl !m-0 font-bold">NYHETER</h1>
       </div>
-
-      <div className="grid gap-6">
         {pages.map((item) => (
           <article key={item.id} className="px-8 py-6">
             <div className="flex justify-between items-start mb-4">
@@ -36,8 +34,7 @@ const News = () => {
             />
           </article>
         ))}
-      </div>
-    </div>
+    </>
   );
 };
 
