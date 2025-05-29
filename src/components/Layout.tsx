@@ -76,7 +76,7 @@ const Layout = () => {
       />
 
       {/* Main content */}
-      <main className="prose max-w-7xl flex flex-col grow w-full bg-white mx-auto px-4 sm:px-6 lg:px-8 py-8 shadow-md">
+      <main className="max-w-7xl flex flex-col grow w-full bg-white mx-auto px-4 sm:px-6 lg:px-8 py-8 shadow-md">
         <Outlet />
       </main>
 

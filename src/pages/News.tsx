@@ -14,20 +14,18 @@ const News = () => {
 
   return (
     <>
-      <div className="flex items-center space-x-2">
+      <div className="flex items-center space-x-2 mb-6">
         <Bell className="h-6 w-6 text-blue-600" />
         <h1 className="text-3xl !m-0 font-bold">NYHETER</h1>
       </div>
         {pages.map((item) => (
-          <article key={item.id} className="px-8 py-6">
-            <div className="flex justify-between items-start mb-4">
+          <article key={item.id} className="px-8 py-6 space-y-6 border-t">
               <div>
                 <h2 className="text-xl font-semibold">{item.title.rendered}</h2>
                 <p className="text-gray-500 text-sm">
                   {new Date(item.date).toLocaleDateString()}
                 </p>
               </div>
-            </div>
             <div
               className="prose max-w-none"
               dangerouslySetInnerHTML={{ __html: item.content.rendered }}
