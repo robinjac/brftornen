@@ -12,6 +12,32 @@ import {
   SheetDescription,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+
+function CarouselDemo() {
+  return (
+    <Carousel className="shadow-md mx-auto w-full max-w-7xl h-auto">
+      <CarouselContent>
+        {Array.from({ length: 5 }).map((_, index) => (
+          <CarouselItem key={index}>
+            <img
+              src="brftornen.jpg"
+              alt="BRF Tornen"
+            />
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext />
+    </Carousel>
+  );
+}
 
 const Layout = () => {
   const [pages, setPages] = useState<WordpressPage[]>([]);
@@ -45,7 +71,10 @@ const Layout = () => {
                     <SheetHeader>
                       <SheetTitle>Information</SheetTitle>
                     </SheetHeader>
-                    <SheetDescription onClickCapture={() => setOpen(false)} className="px-4 overflow-auto">
+                    <SheetDescription
+                      onClickCapture={() => setOpen(false)}
+                      className="px-4 overflow-auto"
+                    >
                       {pages.map((item) => (
                         <Link
                           key={item.slug}
@@ -69,11 +98,7 @@ const Layout = () => {
       </header>
 
       {/* Hero Section */}
-      <img
-        src="brftornen.jpg"
-        alt="BRF Tornen"
-        className="shadow-md mx-auto w-full max-w-7xl h-auto"
-      />
+      <CarouselDemo />
 
       {/* Main content */}
       <main className="max-w-7xl flex flex-col grow w-full bg-white mx-auto px-4 sm:px-6 lg:px-8 py-8 shadow-md">
