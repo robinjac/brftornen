@@ -19,15 +19,28 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 function CarouselDemo() {
   return (
-    <Carousel className="shadow-md mx-auto w-full max-w-7xl h-auto">
+    <Carousel
+      className="shadow-md bg-gray-800 mx-auto w-full max-w-7xl h-auto"
+      opts={{
+        align: "start",
+        loop: true,
+      }}
+      plugins={[
+        Autoplay({
+          delay: 5000,
+        }),
+      ]}
+    >
       <CarouselContent>
-        {Array.from({ length: 5 }).map((_, index) => (
+        {Array.from({ length: 8 }).map((_, index) => (
           <CarouselItem key={index}>
             <img
-              src="brftornen.jpg"
+              className="w-full h-[450px] object-contain"
+              src={`carousel/tornen-${index}.jpeg`}
               alt="BRF Tornen"
             />
           </CarouselItem>
