@@ -31,7 +31,7 @@ function CarouselDemo() {
       }}
       plugins={[
         Autoplay({
-          delay: 5000,
+          delay: 10000,
         }),
       ]}
     >
