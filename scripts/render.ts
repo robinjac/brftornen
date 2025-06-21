@@ -35,11 +35,13 @@ async function fetchWordPressPages() {
     // Example: print each page title
     pages.forEach((page) => {
       fs.writeFile(
-        "src/pages/" + page.slug + ".html",
-        `<div className="prose">
-          <h1>${page.title.rendered.replace(/\//g, " / ")}<h1/>
-          <article>${String(page.content.rendered)}</article>
-        </div>`.replace(/>\s+</g, "><"),
+        "src/pages/" + page.slug + ".tsx",
+        `export default () => (<div className="prose">
+          <h1>${page.title.rendered.replace(/\//g, " / ")}</h1>
+          <article dangerouslySetInnerHTML={{__html: '${page.content.rendered
+            .replace(/\s+/g, " ")
+            .trim()}'}} />
+        </div>)`.replace(/>\s+</g, "><"),
         (err) => {
           if (err) {
             console.error(`Error writing file for page ${page.slug}:`, err);
