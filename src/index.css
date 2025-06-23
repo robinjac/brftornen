@@ -22,6 +22,10 @@
   display: none;
 }
 
+main {
+  min-height: calc(100vh - 60px - 120px); /* header + footer */
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
