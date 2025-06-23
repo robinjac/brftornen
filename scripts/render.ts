@@ -18,6 +18,8 @@ async function clearPagesFolder(folderPath: string) {
   }
 }
 
+const trim = (html: string) => html.replace(/\s+/g, " ").replace(/>\s+</g, "><").trim();
+
 async function fetchWordPressPages() {
   try {
     const response = await fetch(
@@ -36,12 +38,12 @@ async function fetchWordPressPages() {
     pages.forEach((page) => {
       fs.writeFile(
         "src/pages/" + page.slug + ".tsx",
-        `export default () => (<div className="prose">
+        trim(`export default () => (<div className="prose">
           <h1>${page.title.rendered.replace(/\//g, " / ")}</h1>
-          <article dangerouslySetInnerHTML={{__html: '${page.content.rendered
-            .replace(/\s+/g, " ")
-            .trim()}'}} />
-        </div>)`.replace(/>\s+</g, "><"),
+          <article dangerouslySetInnerHTML={{__html: '${trim(
+            page.content.rendered
+          )}'}} />
+        </div>)`),
         (err) => {
           if (err) {
             console.error(`Error writing file for page ${page.slug}:`, err);
@@ -56,4 +58,50 @@ async function fetchWordPressPages() {
   }
 }
 
+async function fetchWordPressNews() {
+  try {
+    const response = await fetch(
+      "https://brftornen.se/wp-json/wp/v2/posts?per_page=100"
+    );
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const posts = await response.json();
+
+    fs.writeFile(
+      "src/components/Posts.tsx",
+      trim(`export default () => (<>
+      ${posts.map(
+        (post) =>
+          `<article className="px-8 py-6 space-y-6 border-t">
+            <header>
+              <h2 className="text-xl font-semibold">${post.title.rendered}</h2>
+              <p className="text-gray-500 text-sm">
+                ${new Date(post.date).toLocaleDateString()}
+              </p>
+            </header>
+            <section
+              className="prose max-w-none"
+              dangerouslySetInnerHTML={{__html: '${trim(
+                post.content.rendered
+              )}'}}
+            />
+          </article>`
+      ).join("")}
+      </>)`),
+      (err) => {
+        if (err) {
+          console.error(`Error writing file for news:`, err);
+        } else {
+          console.log(`news written successfully.`);
+        }
+      }
+    );
+  } catch (error) {
+    console.error("Failed to fetch posts:", error);
+  }
+}
+
 fetchWordPressPages();
+fetchWordPressNews();
