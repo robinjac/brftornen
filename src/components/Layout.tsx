@@ -4,7 +4,7 @@ import { Info } from "lucide-react";
 import { replacePlaceholders } from "../utils";
 import i18n from "i18n/sv.json";
 import data from "@/general.json";
-import routes from "@/routes.json";
+import routes from "@/pages";
 import {
   Sheet,
   SheetContent,

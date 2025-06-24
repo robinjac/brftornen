@@ -21,6 +21,15 @@ async function clearPagesFolder(folderPath: string) {
 const trim = (html: string) =>
   html.replace(/\s+/g, " ").replace(/>\s+</g, "><").trim();
 
+function kebabToCamelCase(str: string): string {
+  return str
+    .split("-")
+    .map((word, index) =>
+      index === 0 ? word : word.charAt(0).toUpperCase() + word.slice(1)
+    )
+    .join("");
+}
+
 async function fetchWordPressPages() {
   try {
     const response = await fetch(
@@ -35,19 +44,11 @@ async function fetchWordPressPages() {
     const pagesFolder = path.resolve(__dirname, "../src/pages");
     await clearPagesFolder(pagesFolder);
 
-    fs.writeFile(
-      "src/routes.json",
-      JSON.stringify(
-        pages.map((page) => ({ title: page.title.rendered, slug: page.slug }))
-      ),
-      (err) => {
-        if (err) {
-          console.error("Error writing routes.json:", err);
-        } else {
-          console.log("routes.json written successfully.");
-        }
-      }
-    );
+    const routes = pages.map((page) => ({
+      title: page.title.rendered,
+      slug: page.slug,
+      component: kebabToCamelCase(page.slug),
+    }));
 
     // Example: print each page title
     pages.forEach((page) => {
@@ -68,12 +69,34 @@ async function fetchWordPressPages() {
         }
       );
     });
+
+    fs.writeFile(
+      "src/pages/index.tsx",
+      trim(`
+        ${routes
+          .map(
+            (route) => `import ${route.component} from "./${route.slug}";`
+          )
+          .join("\n")}
+        export default [${routes.map(
+          ({ title, slug, component }) =>
+            `{title: "${title}", slug: "${slug}", component: ${component}}`
+        )}];
+        `),
+      (err) => {
+        if (err) {
+          console.error("Error writing pages:", err);
+        } else {
+          console.log("Pages written successfully.");
+        }
+      }
+    );
   } catch (error) {
     console.error("Failed to fetch pages:", error);
   }
 }
 
-async function fetchWordPressNews() {
+async function fetchWordPressPosts() {
   try {
     const response = await fetch(
       "https://brftornen.se/wp-json/wp/v2/posts?per_page=100"
@@ -114,9 +137,9 @@ async function fetchWordPressNews() {
       </>)`),
       (err) => {
         if (err) {
-          console.error(`Error writing file for news:`, err);
+          console.error(`Error writing file for post:`, err);
         } else {
-          console.log(`news written successfully.`);
+          console.log(`Posts written successfully.`);
         }
       }
     );
@@ -126,4 +149,4 @@ async function fetchWordPressNews() {
 }
 
 fetchWordPressPages();
-fetchWordPressNews();
+fetchWordPressPosts();
