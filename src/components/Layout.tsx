@@ -57,7 +57,7 @@ const Layout = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="min-h-screen flex flex-col bg-[oklch(0.82_0.05_69.8)]">
+    <div className="min-h-screen overflow-hidden flex flex-col bg-[oklch(0.82_0.05_69.8)]">
       {/* Header */}
       <header className="sticky top-0 z-10 bg-white shadow-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
