@@ -90,19 +90,24 @@ async function fetchWordPressNews() {
       ${posts
         .map(
           (post) =>
-            `<article className="px-8 py-6 space-y-6 border-t">
-            <header>
-              <h2 className="text-xl font-semibold">${post.title.rendered}</h2>
-              <p className="text-gray-500 text-sm">
-                ${new Date(post.date).toLocaleDateString()}
-              </p>
-            </header>
-            <section
-              className="prose max-w-none"
-              dangerouslySetInnerHTML={{__html: '${trim(
-                post.content.rendered
-              )}'}}
-            />
+            `
+          <article className="px-8 py-6 space-y-6 border-t">
+              <header>
+                <h2 className="text-xl font-semibold">${
+                  post.title.rendered
+                }</h2>
+                <p className="text-gray-500 text-sm">
+                  <time dateTime="${post.date}">${new Date(
+              post.date
+            ).toLocaleDateString()}</time>
+                </p>
+              </header>
+              <section
+                className="prose"
+                dangerouslySetInnerHTML={{__html: '${trim(
+                  post.content.rendered
+                )}'}}
+              />
           </article>`
         )
         .join("")}
