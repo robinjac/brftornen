@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "vite",
-    "build": "vite build",
+    "build": "npm run ./scripts/render.ts && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
