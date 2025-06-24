@@ -57,10 +57,15 @@ jobs:
           git config --global user.name ${{ github.actor }}
           git clone --single-branch --branch master https://${{ secrets.API_TOKEN_GITHUB }}@github.com/robinjac/daily-sites.git tmp
 
+      - name: 🟫 Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest # or e.g. 1.1.3
+
       - name: Install Dependencies and Build
         run: |
-          npm install
-          npm run build
+          bun install
+          bun run build
 
       - name: Copy Built Files to Branch Folder
         run: |
