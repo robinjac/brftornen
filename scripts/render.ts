@@ -18,7 +18,8 @@ async function clearPagesFolder(folderPath: string) {
   }
 }
 
-const trim = (html: string) => html.replace(/\s+/g, " ").replace(/>\s+</g, "><").trim();
+const trim = (html: string) =>
+  html.replace(/\s+/g, " ").replace(/>\s+</g, "><").trim();
 
 async function fetchWordPressPages() {
   try {
@@ -33,6 +34,20 @@ async function fetchWordPressPages() {
 
     const pagesFolder = path.resolve(__dirname, "../src/pages");
     await clearPagesFolder(pagesFolder);
+
+    fs.writeFile(
+      "src/routes.json",
+      JSON.stringify(
+        pages.map((page) => ({ title: page.title.rendered, slug: page.slug }))
+      ),
+      (err) => {
+        if (err) {
+          console.error("Error writing routes.json:", err);
+        } else {
+          console.log("routes.json written successfully.");
+        }
+      }
+    );
 
     // Example: print each page title
     pages.forEach((page) => {
@@ -72,9 +87,10 @@ async function fetchWordPressNews() {
     fs.writeFile(
       "src/components/Posts.tsx",
       trim(`export default () => (<>
-      ${posts.map(
-        (post) =>
-          `<article className="px-8 py-6 space-y-6 border-t">
+      ${posts
+        .map(
+          (post) =>
+            `<article className="px-8 py-6 space-y-6 border-t">
             <header>
               <h2 className="text-xl font-semibold">${post.title.rendered}</h2>
               <p className="text-gray-500 text-sm">
@@ -88,7 +104,8 @@ async function fetchWordPressNews() {
               )}'}}
             />
           </article>`
-      ).join("")}
+        )
+        .join("")}
       </>)`),
       (err) => {
         if (err) {

@@ -2,8 +2,9 @@ import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { Info } from "lucide-react";
 import { replacePlaceholders } from "../utils";
-import i18n from "../../i18n/sv.json";
-import data from "../../test/general.json";
+import i18n from "i18n/sv.json";
+import data from "@/general.json";
+import routes from "@/routes.json";
 import {
   Sheet,
   SheetContent,
@@ -20,7 +21,6 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import routes from "../../routes.json";
 
 function CarouselDemo() {
   return (
@@ -83,11 +83,11 @@ const Layout = () => {
                     >
                       {routes.map((item) => (
                         <Link
-                          key={item}
-                          to={item}
+                          key={item.slug}
+                          to={item.slug}
                           className="block py-2 text-sm text-gray-700 hover:text-gray-900"
                         >
-                          {item}
+                          {item.title}
                         </Link>
                       ))}
                     </SheetDescription>
