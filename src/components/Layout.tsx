@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { Info } from "lucide-react";
 import { replacePlaceholders } from "../utils";
@@ -20,6 +20,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import routes from "../../routes.json";
 
 function CarouselDemo() {
   return (
@@ -53,14 +54,7 @@ function CarouselDemo() {
 }
 
 const Layout = () => {
-  const [pages, setPages] = useState<WordpressPage[]>([]);
   const [open, setOpen] = useState(false);
-
-  useEffect(() => {
-    fetch(`https://www.brftornen.se/wp-json/wp/v2/pages?per_page=100`)
-      .then((res) => res.json())
-      .then(setPages);
-  }, []);
 
   return (
     <div className="min-h-screen flex flex-col bg-[oklch(0.82_0.05_69.8)]">
@@ -70,7 +64,6 @@ const Layout = () => {
           <div className="flex justify-between items-center h-16">
             <Link to="/" className="flex items-center space-x-2">
               <div className="bg-[url('/brftornen-logga.jpg')] bg-cover h-10 w-10"></div>
-              {/* <Home className="h-6 w-6 text-blue-600" /> */}
               <span className="font-semibold text-xl">BRF Tornen Järfälla</span>
             </Link>
             <nav>
@@ -88,17 +81,13 @@ const Layout = () => {
                       onClickCapture={() => setOpen(false)}
                       className="px-4 overflow-auto"
                     >
-                      {pages.map((item) => (
+                      {routes.map((item) => (
                         <Link
-                          key={item.slug}
-                          to={item.slug}
+                          key={item}
+                          to={item}
                           className="block py-2 text-sm text-gray-700 hover:text-gray-900"
                         >
-                          <p
-                            dangerouslySetInnerHTML={{
-                              __html: item.title.rendered,
-                            }}
-                          />
+                          {item}
                         </Link>
                       ))}
                     </SheetDescription>
