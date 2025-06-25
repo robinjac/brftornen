@@ -40,7 +40,7 @@ function CarouselDemo() {
         {Array.from({ length: 7 }).map((_, index) => (
           <CarouselItem key={index}>
             <img
-              className="w-full h-[450px] object-contain"
+              className="w-full h-[300px] lg:h-[450px] object-contain"
               src={`carousel/tornen-${index}.jpeg`}
               alt="BRF Tornen"
             />
@@ -68,9 +68,9 @@ const Layout = () => {
             <nav>
               <div className="relative group">
                 <Sheet open={open} onOpenChange={setOpen}>
-                  <SheetTrigger className="text-gray-500 border rounded-b-md cursor-pointer flex items-center space-x-1 group-hover:bg-gray-50 group-hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
-                    <HelpCircle className="h-6 w-6" />
-                    <span className="hidden lg:flex">Information</span>
+                  <SheetTrigger className="text-gray-500 border rounded-b-md cursor-pointer flex items-center group-hover:bg-gray-50 group-hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
+                    <HelpCircle className="size-6" />
+                    <span className="hidden lg:flex ml-1">Information</span>
                   </SheetTrigger>
                   <SheetContent>
                     <SheetHeader>
