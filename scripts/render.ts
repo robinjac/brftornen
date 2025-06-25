@@ -18,8 +18,21 @@ async function clearPagesFolder(folderPath: string) {
   }
 }
 
-const trim = (html: string) =>
-  html.replace(/\s+/g, " ").replace(/>\s+</g, "><").trim();
+const trim = (html: string): string => {
+  return (
+    html
+      // Remove script tags and their content
+      .replace(/<script[^>]*>.*?<\/script>/gi, "")
+      // Remove style tags and their content
+      .replace(/<style[^>]*>.*?<\/style>/gi, "")
+      // Remove comments
+      .replace(/<!--.*?-->/g, "")
+      // Remove unnecessary whitespace between tags
+      .replace(/>\s+</g, "><")
+      // Remove leading and trailing whitespace
+      .trim()
+  );
+};
 
 function kebabToCamelCase(str: string): string {
   return str
@@ -74,9 +87,7 @@ async function fetchWordPressPages() {
       "src/pages/index.tsx",
       trim(`
         ${routes
-          .map(
-            (route) => `import ${route.component} from "./${route.slug}";`
-          )
+          .map((route) => `import ${route.component} from "./${route.slug}";`)
           .join("\n")}
         export default [${routes.map(
           ({ title, slug, component }) =>
