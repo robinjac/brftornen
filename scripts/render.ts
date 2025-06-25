@@ -125,7 +125,7 @@ async function fetchWordPressPosts() {
         .map(
           (post) =>
             `
-          <article className="px-8 py-6 space-y-6 border-t">
+          <article className="py-6 space-y-6 border-t">
               <header>
                 <h2 className="text-xl font-semibold">${
                   post.title.rendered
