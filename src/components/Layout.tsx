@@ -37,7 +37,7 @@ function CarouselDemo() {
       ]}
     >
       <CarouselContent>
-        {Array.from({ length: 8 }).map((_, index) => (
+        {Array.from({ length: 7 }).map((_, index) => (
           <CarouselItem key={index}>
             <img
               className="w-full h-[450px] object-contain"
