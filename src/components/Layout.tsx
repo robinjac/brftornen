@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
-import { Info } from "lucide-react";
+import { HelpCircle } from "lucide-react";
 import { replacePlaceholders } from "../utils";
 import i18n from "i18n/sv.json";
 import data from "@/general.json";
@@ -68,8 +68,8 @@ const Layout = () => {
             <nav>
               <div className="relative group">
                 <Sheet open={open} onOpenChange={setOpen}>
-                  <SheetTrigger className="text-gray-500 cursor-pointer flex items-center space-x-1 group-hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
-                    <Info className="h-6 w-6" />
+                  <SheetTrigger className="text-gray-500 border rounded-b-md cursor-pointer flex items-center space-x-1 group-hover:bg-gray-50 group-hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
+                    <HelpCircle className="h-6 w-6" />
                     <span className="hidden lg:flex">Information</span>
                   </SheetTrigger>
                   <SheetContent>
