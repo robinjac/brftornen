@@ -47,8 +47,8 @@ function CarouselDemo() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className="cursor-pointer" />
+      <CarouselNext className="cursor-pointer" />
     </Carousel>
   );
 }
@@ -57,9 +57,8 @@ const Layout = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="min-h-screen overflow-hidden flex flex-col bg-[oklch(0.82_0.05_69.8)]">
-      {/* Header */}
-      <header className="sticky top-0 z-10 bg-white shadow-md">
+    <>
+      <header className="sticky max-w-7xl mx-auto w-full top-0 z-10 bg-white shadow-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link to="/" className="flex items-center space-x-2">
@@ -98,40 +97,40 @@ const Layout = () => {
           </div>
         </div>
       </header>
+      <div className="min-h-screen overflow-hidden flex flex-col">
+        <CarouselDemo />
 
-      {/* Hero Section */}
-      <CarouselDemo />
+        {/* Main content */}
+        <main className="max-w-7xl flex flex-col grow w-full bg-white mx-auto px-4 sm:px-6 lg:px-8 py-8 shadow-md">
+          <Outlet />
+        </main>
 
-      {/* Main content */}
-      <main className="max-w-7xl flex flex-col grow w-full bg-white mx-auto px-4 sm:px-6 lg:px-8 py-8 shadow-md">
-        <Outlet />
-      </main>
-
-      {/* Footer */}
-      <footer className="bg-gray-800 text-white mt-auto">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div>
-            <h3 className="text-lg font-semibold mb-4">
-              {i18n.layout.contactUs}
-            </h3>
-            <p>
-              {i18n.layout.email}: {data.email}
-            </p>
-            <p>
-              {i18n.layout.address}: {data.address}
-            </p>
+        {/* Footer */}
+        <footer className="bg-gray-800 max-w-7xl mx-auto w-full text-white mt-auto">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div>
+              <h3 className="text-lg font-semibold mb-4">
+                {i18n.layout.contactUs}
+              </h3>
+              <p>
+                {i18n.layout.email}: {data.email}
+              </p>
+              <p>
+                {i18n.layout.address}: {data.address}
+              </p>
+            </div>
+            <div className="mt-8 pt-8 border-t border-gray-700 text-center">
+              <p>
+                {replacePlaceholders(
+                  i18n.layout.copyright,
+                  String(new Date().getFullYear())
+                )}
+              </p>
+            </div>
           </div>
-          <div className="mt-8 pt-8 border-t border-gray-700 text-center">
-            <p>
-              {replacePlaceholders(
-                i18n.layout.copyright,
-                String(new Date().getFullYear())
-              )}
-            </p>
-          </div>
-        </div>
-      </footer>
-    </div>
+        </footer>
+      </div>
+    </>
   );
 };
 

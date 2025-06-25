@@ -138,6 +138,6 @@ main {
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-[oklch(0.82_0.05_69.8/0.72)] text-foreground;
   }
 }
