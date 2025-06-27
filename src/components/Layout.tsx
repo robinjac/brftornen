@@ -25,7 +25,7 @@ import Autoplay from "embla-carousel-autoplay";
 function CarouselDemo() {
   return (
     <Carousel
-      className="shadow-md bg-gray-800 mx-auto w-full max-w-7xl h-auto"
+      className="shadow-md bg-gray-800 mx-auto w-full max-w-6xl h-auto"
       opts={{
         align: "start",
         loop: true,
@@ -58,8 +58,8 @@ const Layout = () => {
 
   return (
     <>
-      <header className="sticky max-w-7xl mx-auto w-full top-0 z-10 bg-white shadow-md">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <header className="sticky max-w-6xl mx-auto w-full top-0 z-10 bg-white shadow-md">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link to="/" className="flex items-center space-x-2">
               <div className="bg-[url('/brftornen-logga.jpg')] bg-cover h-10 w-10"></div>
@@ -101,13 +101,13 @@ const Layout = () => {
         <CarouselDemo />
 
         {/* Main content */}
-        <main className="max-w-7xl flex flex-col grow w-full bg-white mx-auto px-4 sm:px-6 lg:px-8 py-8 shadow-md">
+        <main className="max-w-6xl flex flex-col grow w-full bg-white mx-auto px-4 sm:px-6 lg:px-8 py-8 shadow-md">
           <Outlet />
         </main>
 
         {/* Footer */}
-        <footer className="bg-gray-800 max-w-7xl mx-auto w-full text-white mt-auto">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <footer className="bg-gray-800 max-w-6xl mx-auto w-full text-white mt-auto">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div>
               <h3 className="text-lg font-semibold mb-4">
                 {i18n.layout.contactUs}
