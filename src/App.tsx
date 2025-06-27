@@ -1,4 +1,4 @@
-import { Routes, Route, HashRouter } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router";
 import Layout from "@/components/Layout";
 import News from "@/components/News";
 import Page from "@/components/Page";

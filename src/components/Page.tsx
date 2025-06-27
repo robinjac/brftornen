@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams } from "react-router";
 import { trim } from "@/lib/utils";
 import pages from "@/pages.json";
 
@@ -12,8 +12,8 @@ const Page = () => {
 
   return (
     <article className="prose">
-      <h1>{data.title.rendered.replace(/\//g, " / ")}</h1>
-      <section dangerouslySetInnerHTML={{ __html: trim(data.content.rendered) }} />
+      <h1 className="border-b pb-6">{data.title.rendered.replace(/\//g, " / ")}</h1>
+      <section className="border-b pb-6" dangerouslySetInnerHTML={{ __html: trim(data.content.rendered) }} />
       <p className="text-gray-500 text-sm">
         <time dateTime={data.date}>
         {new Date(data.date).toLocaleDateString()}

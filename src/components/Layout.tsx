@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router";
 import { HelpCircle } from "lucide-react";
 import { replacePlaceholders } from "../utils";
 import i18n from "i18n/sv.json";
