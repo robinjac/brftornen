@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "bun scripts/render && vite",
+    "render": "bun scripts/render",
+    "start": "vite",
     "build": "bun scripts/render && vite build",
     "preview": "vite preview"
   },
@@ -16,9 +17,9 @@
     "embla-carousel-autoplay": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
     "lucide-react": "^0.344.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^7.6.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router": "^7.5.3",
     "tailwind-merge": "^3.2.0"
   },
   "devDependencies": {

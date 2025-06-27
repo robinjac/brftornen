@@ -4,7 +4,7 @@ import { HelpCircle } from "lucide-react";
 import { replacePlaceholders } from "../utils";
 import i18n from "i18n/sv.json";
 import data from "@/general.json";
-import routes from "@/pages";
+import routes from "@/pages.json";
 import {
   Sheet,
   SheetContent,
@@ -86,7 +86,7 @@ const Layout = () => {
                           to={item.slug}
                           className="block py-2 text-sm text-gray-700 hover:text-gray-900"
                         >
-                          {item.title}
+                          {item.title.rendered}
                         </Link>
                       ))}
                     </SheetDescription>

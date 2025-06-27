@@ -1,26 +1,18 @@
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import Layout from "@/components/Layout";
 import News from "@/components/News";
-import pages from "@/pages";
+import Page from "@/components/Page";
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<News />} />
-          {pages.map((page) => {
-            return (
-              <Route
-                key={page.slug}
-                path={page.slug}
-                element={<page.component />}
-              />
-            );
-          })}
+          <Route path="/:slug" element={<Page />} />
         </Route>
       </Routes>
-    </Router>
+    </HashRouter>
   );
 }
 
