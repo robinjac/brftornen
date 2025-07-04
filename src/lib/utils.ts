@@ -8,10 +8,6 @@ export function cn(...inputs: ClassValue[]) {
 export const trim = (html: string): string => {
   return (
     html
-      // Remove script tags and their content
-      .replace(/<script[^>]*>.*?<\/script>/gi, "")
-      // Remove style tags and their content
-      .replace(/<style[^>]*>.*?<\/style>/gi, "")
       // Remove comments
       .replace(/<!--.*?-->/g, "")
       // Remove unnecessary whitespace between tags

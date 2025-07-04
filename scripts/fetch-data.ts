@@ -58,5 +58,5 @@ async function fetchWordPressPosts() {
   }
 }
 
-fetchWordPressPages();
-fetchWordPressPosts();
+await fetchWordPressPages();
+await fetchWordPressPosts();

@@ -1,18 +1,16 @@
-import { Routes, Route, HashRouter } from "react-router";
+import { Routes, Route } from "react-router";
 import Layout from "@/components/Layout";
 import News from "@/components/News";
 import Page from "@/components/Page";
 
 function App() {
   return (
-    <HashRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<News />} />
-          <Route path="/:slug" element={<Page />} />
-        </Route>
-      </Routes>
-    </HashRouter>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<News />} />
+        <Route path="/:slug" element={<Page />} />
+      </Route>
+    </Routes>
   );
 }
 
