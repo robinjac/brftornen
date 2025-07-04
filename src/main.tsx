@@ -1,14 +1,14 @@
 import { StrictMode } from "react";
-import { HashRouter } from "react-router";
+import { BrowserRouter } from "react-router";
 import { hydrateRoot, createRoot } from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
 
 const Main = () => (
   <StrictMode>
-    <HashRouter>
+    <BrowserRouter>
       <App />
-    </HashRouter>
+    </BrowserRouter>
   </StrictMode>
 );
 
