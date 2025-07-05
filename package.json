@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "fetch":"bun scripts/fetch",
+    "fetch": "bun scripts/fetch",
     "prerender": "bun scripts/prerender",
     "start": "vite",
     "build": "bun run fetch && vite build && bun run prerender",
