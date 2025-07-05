@@ -77,7 +77,7 @@ const Routes = ({ selected }: { selected?: string }) =>
       className={`block py-2 px-4 rounded text-sm text-gray-700  transition ${
         selected === item.slug
           ? "!text-white bg-gray-800 font-semibold rounded"
-          : "hover:text-gray-900 hover:bg-gray-100"
+          : "hover:text-gray-900 hover:bg-gray-200"
       }`}
     >
       {item.title.rendered}
@@ -127,7 +127,7 @@ const Layout = () => {
           <main className="flex-grow">
             <Outlet />
           </main>
-          <nav className="hidden lg:flex ml-8 flex-col space-y-2 min-w-[180px]">
+          <nav className="hidden lg:flex ml-8 p-4 flex-col space-y-2 min-w-[180px] bg-gray-100 rounded">
             <Routes selected={slug} />
           </nav>
         </div>
