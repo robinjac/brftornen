@@ -112,12 +112,8 @@ const Layout = () => {
               <h3 className="text-lg font-semibold mb-4">
                 {i18n.layout.contactUs}
               </h3>
-              <p>
-                {i18n.layout.email}: {data.email}
-              </p>
-              <p>
-                {i18n.layout.address}: {data.address}
-              </p>
+              <p>{i18n.layout.email}</p>:<p>{data.email}</p>
+              <p>{i18n.layout.address}</p>:<p>{data.address}</p>
             </div>
             <div className="mt-8 pt-8 border-t border-gray-700 text-center">
               <p>
