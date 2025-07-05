@@ -1,8 +1,8 @@
-import { clsx, type ClassValue } from "clsx"
-import { twMerge } from "tailwind-merge"
+import { clsx, type ClassValue } from "clsx";
+import { twMerge } from "tailwind-merge";
 
 export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs))
+  return twMerge(clsx(inputs));
 }
 
 export const trim = (html: string): string => {
@@ -26,3 +26,11 @@ export function kebabToCamelCase(str: string): string {
     .join("");
 }
 
+export function toDateString(date: string) {
+  const d = new Date(date);
+  return d.toLocaleDateString("sv-SE", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  });
+}

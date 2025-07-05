@@ -14,9 +14,10 @@ function prerender(route: string) {
   );
 
   const distIndex = fs.readFileSync("dist/index.html", "utf-8");
-  const assetTags = distIndex
-    .match(/<script.*?<\/script>|<link.*?>/g)!
-    .join("\n");
+  const assetTags = distIndex.match(/<script.*?<\/script>|<link.*?>/g)!;
+
+  const linkTags = assetTags.filter((tag) => tag.startsWith("<link"));
+  const scriptTags = assetTags.filter((tag) => tag.startsWith("<script"));
 
   const fullHtml = trim(`
   <!doctype html>
@@ -26,10 +27,11 @@ function prerender(route: string) {
         <link rel="icon" type="image/svg+xml" href="brftornen-logga.jpg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>BRF Tornen Järfälla</title>
-        ${assetTags}
+        ${linkTags.join("\n")}
       </head>
       <body>
         <div id="root">${html}</div>
+        ${scriptTags.join("\n")}
       </body>
     </html>
   `);

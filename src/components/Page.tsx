@@ -1,5 +1,5 @@
 import { useParams } from "react-router";
-import { trim } from "@/lib/utils";
+import { trim, toDateString } from "@/lib/utils";
 import pages from "@/pages.json";
 
 const Page = () => {
@@ -21,7 +21,7 @@ const Page = () => {
       />
       <p className="text-gray-500 text-sm">
         <time dateTime={data.date}>
-          {new Date(data.date).toLocaleDateString()}
+          {toDateString(data.date)}
         </time>
       </p>
     </article>

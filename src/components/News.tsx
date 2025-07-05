@@ -1,5 +1,5 @@
 import { Bell } from "lucide-react";
-import { trim } from "@/lib/utils";
+import { trim, toDateString } from "@/lib/utils";
 import posts from "@/posts.json";
 
 const News = () => {
@@ -15,7 +15,7 @@ const News = () => {
             <h3 className="text-xl font-semibold">{post.title.rendered}</h3>
             <p className="text-gray-500 text-sm">
               <time dateTime={post.date}>
-                {new Date(post.date).toLocaleDateString()}
+                {toDateString(post.date)}
               </time>
             </p>
           </div>
