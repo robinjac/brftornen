@@ -56,6 +56,9 @@ function CarouselDemo() {
 const Layout = () => {
   const [open, setOpen] = useState(false);
 
+  const email = `${i18n.layout.email}: ${data.email}`;
+  const address = `${i18n.layout.address}: ${data.address}`;
+
   return (
     <>
       <header className="sticky max-w-6xl mx-auto w-full top-0 z-10 bg-white shadow-md">
@@ -111,12 +114,8 @@ const Layout = () => {
             <h4 className="text-lg font-semibold mb-4">
               {i18n.layout.contactUs}
             </h4>
-          {/*   <div className="flex space-x-2">
-              <p>{i18n.layout.email}:</p><p>{data.email}</p>
-            </div>
-            <div className="flex space-x-2">
-              <p>{i18n.layout.address}:</p><p>{data.address}</p>
-            </div> */}
+            <p>{email}</p>
+            <p>{address}</p>
             <div className="mt-8 pt-8 border-t border-gray-700 text-center">
               <p>
                 {replacePlaceholders(
