@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, Outlet } from "react-router";
+import { Link, Outlet, useParams } from "react-router";
 import { HelpCircle } from "lucide-react";
 import { replacePlaceholders } from "../utils";
 import i18n from "i18n/sv.json";
@@ -53,26 +53,39 @@ function CarouselDemo() {
   );
 }
 
- const Email = ({email}: {email: string}) => (
-    <div className="prose space-x-2 text-white">
-      <span>{i18n.layout.email}</span>
-      <a
-        className="text-[oklch(0.83_0.04_71.53)]"
-        href={`mailto:${email}`}
-      >
-        {email}
-      </a>
-    </div>
-  );
+const Email = ({ email }: { email: string }) => (
+  <div className="prose space-x-2 text-white">
+    <span>{i18n.layout.email}</span>
+    <a className="text-[oklch(0.83_0.04_71.53)]" href={`mailto:${email}`}>
+      {email}
+    </a>
+  </div>
+);
 
-  const Address = ({address}: {address: string}) => (
-    <div className="prose space-x-2 text-white">
-      <span>{i18n.layout.address}</span>
-      <span>{address}</span>
-    </div>
-  );
+const Address = ({ address }: { address: string }) => (
+  <div className="prose space-x-2 text-white">
+    <span>{i18n.layout.address}</span>
+    <span>{address}</span>
+  </div>
+);
+
+const Routes = ({ selected }: { selected?: string }) =>
+  routes.map((item) => (
+    <Link
+      key={item.slug}
+      to={item.slug}
+      className={`block py-2 px-4 rounded text-sm text-gray-700  transition ${
+        selected === item.slug
+          ? "!text-white bg-gray-800 font-semibold rounded"
+          : "hover:text-gray-900 hover:bg-gray-100"
+      }`}
+    >
+      {item.title.rendered}
+    </Link>
+  ));
 
 const Layout = () => {
+  const { slug } = useParams<{ slug: string }>();
   const [open, setOpen] = useState(false);
 
   return (
@@ -84,34 +97,24 @@ const Layout = () => {
               <div className="bg-[url('/brftornen-logga.jpg')] bg-cover h-10 w-10"></div>
               <span className="font-semibold text-xl">BRF Tornen Järfälla</span>
             </Link>
-            <nav>
-              <div className="relative group">
-                <Sheet open={open} onOpenChange={setOpen}>
-                  <SheetTrigger className="text-gray-500 border rounded-b-md cursor-pointer flex items-center group-hover:bg-gray-50 group-hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
-                    <HelpCircle className="size-6" />
-                    <span className="hidden lg:flex ml-1">Information</span>
-                  </SheetTrigger>
-                  <SheetContent>
-                    <SheetHeader>
-                      <SheetTitle>Information</SheetTitle>
-                    </SheetHeader>
-                    <SheetDescription
-                      onClickCapture={() => setOpen(false)}
-                      className="px-4 overflow-auto"
-                    >
-                      {routes.map((item) => (
-                        <Link
-                          key={item.slug}
-                          to={item.slug}
-                          className="block py-2 text-sm text-gray-700 hover:text-gray-900"
-                        >
-                          {item.title.rendered}
-                        </Link>
-                      ))}
-                    </SheetDescription>
-                  </SheetContent>
-                </Sheet>
-              </div>
+            <nav className="lg:hidden">
+              <Sheet open={open} onOpenChange={setOpen}>
+                <SheetTrigger className="text-gray-500 border rounded-b-md cursor-pointer flex items-center group-hover:bg-gray-50 group-hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
+                  <HelpCircle className="size-6" />
+                  <span className="hidden lg:flex ml-1">Information</span>
+                </SheetTrigger>
+                <SheetContent>
+                  <SheetHeader>
+                    <SheetTitle>Information</SheetTitle>
+                  </SheetHeader>
+                  <SheetDescription
+                    onClickCapture={() => setOpen(false)}
+                    className="px-4 overflow-auto"
+                  >
+                    <Routes selected={slug} />
+                  </SheetDescription>
+                </SheetContent>
+              </Sheet>
             </nav>
           </div>
         </div>
@@ -119,10 +122,15 @@ const Layout = () => {
       <div className="min-h-screen overflow-hidden flex flex-col">
         <CarouselDemo />
 
-        {/* Main content */}
-        <main className="max-w-6xl flex flex-col grow w-full bg-white mx-auto px-4 sm:px-6 lg:px-8 py-8 shadow-md">
-          <Outlet />
-        </main>
+        <div className="max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 flex shadow-md bg-white">
+          {/* Main content */}
+          <main className="flex-grow">
+            <Outlet />
+          </main>
+          <nav className="hidden lg:flex ml-8 flex-col space-y-2 min-w-[180px]">
+            <Routes selected={slug} />
+          </nav>
+        </div>
 
         {/* Footer */}
         <footer className="bg-gray-800 max-w-6xl mx-auto w-full text-white mt-auto">
