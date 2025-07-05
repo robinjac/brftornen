@@ -11,11 +11,9 @@ async function fetchWordPressPages() {
 
     const pages = await response.json();
 
-    const base = process.env.VITE_BASENAME ?? "/";
+    const routes = pages.map((page) => "/" + page.slug);
 
-    const routes = pages.map((page) => base + page.slug);
-
-    routes.push(base);
+    routes.push("/");
 
     fs.writeFile("src/routes.json", JSON.stringify(routes, null, 2), (err) => {
       if (err) {
