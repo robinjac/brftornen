@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "fetch-data":"bun scripts/fetch-data",
-    "prerender": "bun scripts/render",
+    "fetch":"bun scripts/fetch",
+    "prerender": "bun scripts/prerender",
     "start": "vite",
-    "build": "bun run fetch-data && vite build && bun run prerender",
+    "build": "bun run fetch && vite build && bun run prerender",
     "preview": "bun serve dist"
   },
   "dependencies": {
