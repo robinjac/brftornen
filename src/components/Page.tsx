@@ -12,17 +12,18 @@ const Page = () => {
 
   return (
     <article className="prose">
-      <h1 className="border-b pb-6">
-        {data.title.rendered.replace(/\//g, " / ")}
-      </h1>
+      <h1
+        className="border-b pb-6"
+        dangerouslySetInnerHTML={{
+          __html: data.title.rendered.replace(/\//g, " / "),
+        }}
+      />
       <section
         className="border-b pb-6"
         dangerouslySetInnerHTML={{ __html: trim(data.content.rendered) }}
       />
       <p className="text-gray-500 text-sm">
-        <time dateTime={data.date}>
-          {toDateString(data.date)}
-        </time>
+        <time dateTime={data.date}>{toDateString(data.date)}</time>
       </p>
     </article>
   );

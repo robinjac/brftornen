@@ -79,9 +79,10 @@ const Routes = ({ selected }: { selected?: string }) =>
           ? "!text-white bg-gray-800 font-semibold rounded"
           : "hover:text-gray-900 hover:bg-gray-200"
       }`}
-    >
-      {item.title.rendered}
-    </Link>
+      dangerouslySetInnerHTML={{
+        __html: item.title.rendered.replace(/\//g, " / "),
+      }}
+    ></Link>
   ));
 
 const Layout = () => {
