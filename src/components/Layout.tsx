@@ -53,11 +53,27 @@ function CarouselDemo() {
   );
 }
 
+ const Email = ({email}: {email: string}) => (
+    <div className="prose space-x-2 text-white">
+      <span>{i18n.layout.email}</span>
+      <a
+        className="text-[oklch(0.83_0.04_71.53)]"
+        href={`mailto:${email}`}
+      >
+        {email}
+      </a>
+    </div>
+  );
+
+  const Address = ({address}: {address: string}) => (
+    <div className="prose space-x-2 text-white">
+      <span>{i18n.layout.address}</span>
+      <span>{address}</span>
+    </div>
+  );
+
 const Layout = () => {
   const [open, setOpen] = useState(false);
-
-  const email = `${i18n.layout.email}: ${data.email}`;
-  const address = `${i18n.layout.address}: ${data.address}`;
 
   return (
     <>
@@ -114,8 +130,10 @@ const Layout = () => {
             <h4 className="text-lg font-semibold mb-4">
               {i18n.layout.contactUs}
             </h4>
-            <p>{email}</p>
-            <p>{address}</p>
+            <address>
+              <Email email={data.email ?? ""} />
+              <Address address={data.address ?? ""} />
+            </address>
             <div className="mt-8 pt-8 border-t border-gray-700 text-center">
               <p>
                 {replacePlaceholders(
