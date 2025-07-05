@@ -15,7 +15,7 @@ async function fetchWordPressPages() {
 
     routes.push("/");
 
-    fs.writeFile("routes.json", JSON.stringify(routes, null, 2), (err) => {
+    fs.writeFile("src/routes.json", JSON.stringify(routes, null, 2), (err) => {
       if (err) {
         console.error("Error writing routes:", err);
       } else {

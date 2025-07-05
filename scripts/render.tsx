@@ -3,7 +3,7 @@ import path from "node:path";
 import { StaticRouter } from "react-router";
 import { renderToString } from "react-dom/server";
 import App from "../src/App";
-import routes from "../routes.json";
+import routes from "../src/routes.json";
 import { trim } from "../src/lib/utils";
 
 function prerender(route: string) {
