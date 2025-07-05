@@ -108,12 +108,14 @@ const Layout = () => {
         {/* Footer */}
         <footer className="bg-gray-800 max-w-6xl mx-auto w-full text-white mt-auto">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div>
-              <h3 className="text-lg font-semibold mb-4">
-                {i18n.layout.contactUs}
-              </h3>
-              <p>{i18n.layout.email}</p>:<p>{data.email}</p>
-              <p>{i18n.layout.address}</p>:<p>{data.address}</p>
+            <h4 className="text-lg font-semibold mb-4">
+              {i18n.layout.contactUs}
+            </h4>
+            <div className="flex space-x-2">
+              <p>{i18n.layout.email}:</p><p>{data.email}</p>
+            </div>
+            <div className="flex space-x-2">
+              <p>{i18n.layout.address}:</p><p>{data.address}</p>
             </div>
             <div className="mt-8 pt-8 border-t border-gray-700 text-center">
               <p>
