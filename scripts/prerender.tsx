@@ -6,7 +6,8 @@ import App from "../src/App";
 import routes from "../src/routes.json";
 import { trim } from "../src/lib/utils";
 
-const BASE_URL = process.env.VITE_BASENAME ?? "https://localhost:3000";
+const DOMAIN = process.env.VITE_DOMAIN ?? "https://localhost:3000";
+const BASE_URL = DOMAIN + (process.env.VITE_BASENAME ?? "/");
 
 function formatRouteTitle(route: string): string {
   const withoutSlash = route.replace(/^\//, "");
