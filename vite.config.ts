@@ -24,5 +24,5 @@ export default defineConfig({
       i18n: path.resolve(__dirname, "./i18n"),
     },
   },
-  base: process.env.VITE_BASENAME ?? "/",
+  base: process.env.VITE_BASENAME,
 });
