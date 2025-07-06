@@ -65,7 +65,7 @@ jobs:
       - name: Install Dependencies and Build
         run: |
           bun install
-          VITE_BASENAME="/daily-sites/${{ env.REPO_SLUG }}/${{ env.REF_SLUG }}/branch" bun run build
+          VITE_BASENAME="robinjac.github.io/daily-sites/${{ env.REPO_SLUG }}/${{ env.REF_SLUG }}/branch" bun run build
 
       - name: Copy Built Files to Branch Folder
         run: |
