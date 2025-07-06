@@ -101,9 +101,8 @@ const Layout = () => {
             </Link>
             <nav className="lg:hidden">
               <Sheet open={open} onOpenChange={setOpen}>
-                <SheetTrigger className="text-gray-500 border rounded-b-md cursor-pointer flex items-center group-hover:bg-gray-50 group-hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
+                <SheetTrigger className="text-gray-500 cursor-pointer flex items-center hover:bg-gray-200 hover:text-gray-900 p-2 rounded-md text-sm font-medium">
                   <HelpCircle className="size-6" />
-                  <span className="hidden lg:flex ml-1">Information</span>
                 </SheetTrigger>
                 <SheetContent>
                   <SheetHeader>
@@ -129,7 +128,7 @@ const Layout = () => {
           <main className="flex-grow">
             <Outlet />
           </main>
-          <nav className="hidden lg:flex ml-8 p-4 flex-col space-y-2 min-w-[180px] bg-gray-100 rounded">
+          <nav className="hidden lg:flex ml-8 p-4 flex-col space-y-2 min-w-[310px] bg-gray-100 rounded">
             <Routes selected={slug} />
           </nav>
         </div>
