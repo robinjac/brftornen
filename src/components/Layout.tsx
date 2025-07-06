@@ -22,6 +22,7 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
+
 function CarouselDemo() {
   return (
     <Carousel
@@ -41,7 +42,7 @@ function CarouselDemo() {
           <CarouselItem key={index}>
             <img
               className="w-full h-[300px] lg:h-[450px] object-contain"
-              src={`${(import.meta.env.BASE_URL ?? "/")}carousel/tornen-${index}.jpeg`}
+              src={`${(import.meta.env.VITE_BASENAME ?? "/")}carousel/tornen-${index}.jpeg`}
               alt="BRF Tornen"
             />
           </CarouselItem>
